@@ -1,0 +1,23 @@
+body.homepage{
+  #headerCallToAction{
+  background: #0d2647 url(desk-photo.jpg) no-repeat center center;
+  background-size: 100% auto;
+  @include box-shadow(#000 0 0 400px inset);
+  margin: -100px 0 0;
+  padding: 250px 0 100px;
+
+    h1{
+      color: $white;
+      // font-family: $fontStack;
+      @include font-size(32px);
+      font-weight: 100;
+      line-height: 1.2;
+      text-align: center;
+    }
+  }
+
+  section{
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}

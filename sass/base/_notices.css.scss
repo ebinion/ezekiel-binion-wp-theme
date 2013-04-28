@@ -1,0 +1,19 @@
+.alert{
+  background: darken($alertNoticeColor, 5%);
+  border-bottom: 1px solid darken($alertNoticeColor, 10%);
+  color: #f5f5f5;
+  padding:$spacing/2 0;
+
+  strong{
+    margin-right: 5px;
+  }
+
+  &.error{
+    background: darken($alertErrorColor, 5%);
+    border-color: darken($alertErrorColor, 10%);
+  }
+  &.success{
+    background: darken($alertSuccessColor, 5%);
+    border-color: darken($alertSuccessColor, 10%);
+  }
+}
