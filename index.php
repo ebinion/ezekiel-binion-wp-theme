@@ -31,9 +31,11 @@
     <header id="branding">
       <div class="container">
         <div class="clearfix">
-          <a id="logo" class="four columns" href="<?php bloginfo('wpurl'); ?>">
-            <?php bloginfo('name'); ?>
-          </a>
+          <div class="four columns">
+            <a id="logo" href="<?php bloginfo('wpurl'); ?>">
+              <?php bloginfo('name'); ?>
+            </a>
+          </div>
           <?php header_menu(); ?>
         </div>
       </div>
@@ -44,7 +46,6 @@
         <div class="row">
           <article class="eight columns offset-two">
             <header>
-              <!-- <p class="center"></p> -->
               <time class="post_time" datetime="<?php the_time('c'); ?>" pubdate><?php the_time("F j, Y"); ?> at <?php the_time("g:i a"); ?></time>
               <h1 class="post_title"><?php the_title(); ?></h1>
             </header>
