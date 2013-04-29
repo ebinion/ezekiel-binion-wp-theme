@@ -1,0 +1,45 @@
+form{
+  display: block;
+
+  ul, li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li{
+    margin: 20px 0;
+  }
+}
+
+label{
+  color: $inputBorderColor;
+  display: block;
+  font-weight: bold;
+  margin: 5px 0;
+  text-transform: lowercase;
+  width: 100%;
+}
+
+input[type="text"], input[type="tel"], input[type="url"], input[type="search"], input[type="color"], input[type="number"], input[type="range"], input[type="date"], input[type="password"], input[type="email"]{
+  background: transparent;
+  border: none;
+  border-bottom: 1px dotted $inputBorderColor;
+  @include box-sizing(border-box);
+  @include font-size($baseSize);
+  line-height: 1;
+  padding: 9px $spacing;
+  width:100%;
+
+  &.title{
+    font-family: $headlineStack;
+    @include font-size(26px);
+    font-weight: 100;
+    padding: 3px 0;
+  }
+}
+
+textarea{
+  @include box-sizing(border-box);
+  width:100%;
+}

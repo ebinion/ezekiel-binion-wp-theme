@@ -12,8 +12,16 @@ Tags: responsive
 
 @import "compass";
 @import "compass/reset";
-@import "base/variables";
-@import "base/mixins";
-@import "base/grid";
+@import "variables";
+@import "mixins";
+// Base
 @import "base/base";
-// @import "sections/*";
+@import "base/buttons";
+@import "base/forms";
+@import "base/grid";
+@import "base/header_footer";
+@import "base/navs";
+@import "base/ss-social";
+@import "base/ss-standard";
+// Sections
+@import "sections/blog";
