@@ -1,4 +1,7 @@
 <?php
+// Custom Walker Menu class = "ECB_Walker_Nav_Menu"
+require_once("ecb_walker_nav_menu.php");
+
 // Register all permenant menu (menus that aren't placed in sidebars or through widgets) locations for the site here.
 register_nav_menus( array(
   "primary_menu" => "Header Menu",
@@ -20,6 +23,7 @@ function header_menu(){
   'link_before'     => '',
   'link_after'      => '',
   'depth'           => 1,
+  'walker'          => new ECB_Walker_Nav_Menu()
   );
   wp_nav_menu($options);
 }
