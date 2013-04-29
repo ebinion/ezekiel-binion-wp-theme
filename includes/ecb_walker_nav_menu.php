@@ -1,5 +1,5 @@
 <?php
-// Custom walker menu, I personally don't like having a million classes added to my html. So all the fluff is cut. You'll still have access to the menu classes added in the admin menu, 'current-menu-item', and 'menu-item'
+// Custom walker for nav menus, I personally don't like having a million classes added to my html. So all the fluff is cut. You'll still have access to the menu classes added in the admin menu, 'current-menu-item', and 'menu-item'
 class ECB_Walker_Nav_Menu extends Walker {
   /**
    * @see Walker::$tree_type
