@@ -39,7 +39,23 @@
       </div>
     </header>
 
-    <!-- Content belongs here -->
+    <?php if(have_posts()): while(have_posts()): the_post(); ?>
+      <div class="container">
+        <div class="row">
+          <article class="eight columns offset-two">
+            <header>
+              <!-- <p class="center"></p> -->
+              <time class="post_time" datetime="<?php the_time('c'); ?>" pubdate><?php the_time("F j, Y"); ?> at <?php the_time("g:i a"); ?></time>
+              <h1 class="post_title"><?php the_title(); ?></h1>
+            </header>
+            <div class="content">
+              <?php the_content(); ?>
+            </div>
+            <div class="tilde">~</div>
+          </article>
+        </div>
+      </div>
+    <?php endwhile; endif; ?>
   </div>
   
 
@@ -47,7 +63,7 @@
       <div class="container">
         <div class="clearfix">
           <div class="eight columns">
-            <p class="copyright">© <?php echo date("Y"); ?> Ezekiel C. Binion<br>
+            <p class="copyright">©<?php echo date("Y"); ?> Ezekiel C. Binion<br>
               <a href="about.html">Chicago-based UX/UI designer, front end developer, Ruby on Rails engineer,</a> &amp; <a href="http://gridshiftdesign.com">solopreneur at Grid Shift LLC</a></p>
           </div>
             <?php social_footer_menu(); ?>

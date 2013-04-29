@@ -19,6 +19,8 @@ nav{
 
     &.social{
       @include font-size(30px);
+      font-family: "SSSocial";
+      font-weight: bold;
 
       a{
         color: lighten($bodyTextColor, 40%);
@@ -27,6 +29,7 @@ nav{
 
         &:focus, &:hover{
           color: $primaryColor;
+          text-decoration: none;
         }
       }
     }

@@ -731,8 +731,10 @@ nav ul {
   /* line 20, sass/base/_navs.scss */
   nav ul.social {
     font-size: 30px;
-    font-size: 3 rem; }
-    /* line 23, sass/base/_navs.scss */
+    font-size: 3 rem;
+    font-family: "SSSocial";
+    font-weight: bold; }
+    /* line 25, sass/base/_navs.scss */
     nav ul.social a {
       color: #bbbbbb;
       padding: 0 10px;
@@ -740,33 +742,34 @@ nav ul {
       -moz-transition: color 0.2s ease-in-out;
       -o-transition: color 0.2s ease-in-out;
       transition: color 0.2s ease-in-out; }
-      /* line 28, sass/base/_navs.scss */
+      /* line 30, sass/base/_navs.scss */
       nav ul.social a:focus, nav ul.social a:hover {
-        color: #007ab6; }
+        color: #007ab6;
+        text-decoration: none; }
 
-/* line 36, sass/base/_navs.scss */
+/* line 39, sass/base/_navs.scss */
 #userControls {
   background: #252525;
   border-bottom: 1px solid #333;
   height: 50px;
   overflow: hidden; }
-  /* line 42, sass/base/_navs.scss */
+  /* line 45, sass/base/_navs.scss */
   #userControls #userInfo {
     float: right; }
-  /* line 46, sass/base/_navs.scss */
+  /* line 49, sass/base/_navs.scss */
   #userControls img {
     -webkit-transition: opacity 0.3s ease-in-out;
     -moz-transition: opacity 0.3s ease-in-out;
     -o-transition: opacity 0.3s ease-in-out;
     transition: opacity 0.3s ease-in-out;
     opacity: .3; }
-  /* line 51, sass/base/_navs.scss */
+  /* line 54, sass/base/_navs.scss */
   #userControls ul {
     margin: 0; }
-  /* line 53, sass/base/_navs.scss */
+  /* line 56, sass/base/_navs.scss */
   #userControls .ss-icons {
     margin-right: 1px; }
-  /* line 57, sass/base/_navs.scss */
+  /* line 60, sass/base/_navs.scss */
   #userControls a {
     color: #bbb;
     line-height: 50px;
@@ -776,26 +779,26 @@ nav ul {
     -moz-transition: opacity 0.3s ease-in-out;
     -o-transition: opacity 0.3s ease-in-out;
     transition: opacity 0.3s ease-in-out; }
-    /* line 64, sass/base/_navs.scss */
+    /* line 67, sass/base/_navs.scss */
     #userControls a .ss-icons:before {
       position: relative;
       top: 1px; }
-  /* line 69, sass/base/_navs.scss */
+  /* line 72, sass/base/_navs.scss */
   #userControls:focus img, #userControls:hover img {
     opacity: .8; }
-  /* line 72, sass/base/_navs.scss */
+  /* line 75, sass/base/_navs.scss */
   #userControls:focus a, #userControls:hover a {
     opacity: .8;
     -webkit-transition: color 0.3s ease-in-out;
     -moz-transition: color 0.3s ease-in-out;
     -o-transition: color 0.3s ease-in-out;
     transition: color 0.3s ease-in-out; }
-    /* line 76, sass/base/_navs.scss */
+    /* line 79, sass/base/_navs.scss */
     #userControls:focus a:hover, #userControls:focus a:focus, #userControls:hover a:hover, #userControls:hover a:focus {
       opacity: .99;
       color: #fff;
       text-decoration: none; }
-      /* line 81, sass/base/_navs.scss */
+      /* line 84, sass/base/_navs.scss */
       #userControls:focus a:hover .ss-icons, #userControls:focus a:focus .ss-icons, #userControls:hover a:hover .ss-icons, #userControls:hover a:focus .ss-icons {
         color: #37bdff; }
 
@@ -810,15 +813,15 @@ nav ul {
 */
 @font-face {
   font-family: "SSSocial";
-  src: url("../webfonts/ss-social-circle.eot");
-  src: url("../webfonts/ss-social-circle.eot?#iefix") format("embedded-opentype"), url("../webfonts/ss-social-circle.woff") format("woff"), url("../webfonts/ss-social-circle.ttf") format("truetype"), url("../webfonts/ss-social-circle.svg#SSSocialCircle") format("svg");
+  src: url("webfonts/ss-social-circle.eot");
+  src: url("webfonts/ss-social-circle.eot?#iefix") format("embedded-opentype"), url("webfonts/ss-social-circle.woff") format("woff"), url("webfonts/ss-social-circle.ttf") format("truetype"), url("webfonts/ss-social-circle.svg#SSSocialCircle") format("svg");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: "SSSocial";
-  src: url("../webfonts/ss-social-regular.eot");
-  src: url("../webfonts/ss-social-regular.eot?#iefix") format("embedded-opentype"), url("../webfonts/ss-social-regular.woff") format("woff"), url("../webfonts/ss-social-regular.ttf") format("truetype"), url("../webfonts/ss-social-regular.svg#SSSocialRegular") format("svg");
+  src: url("webfonts/ss-social-regular.eot");
+  src: url("webfonts/ss-social-regular.eot?#iefix") format("embedded-opentype"), url("webfonts/ss-social-regular.woff") format("woff"), url("webfonts/ss-social-regular.ttf") format("truetype"), url("webfonts/ss-social-regular.svg#SSSocialRegular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -968,8 +971,8 @@ nav ul {
 */
 @font-face {
   font-family: "SSStandard";
-  src: url("assets/webfonts/ss-standard.eot");
-  src: url("assets/webfonts/ss-standard.eot?#iefix") format("embedded-opentype"), url("assets/webfonts/ss-standard.woff") format("woff"), url("assets/webfonts/ss-standard.ttf") format("truetype"), url("assets/webfonts/ss-standard.svg#SSStandard") format("svg");
+  src: url("webfonts/ss-standard.eot");
+  src: url("webfonts/ss-standard.eot?#iefix") format("embedded-opentype"), url("webfonts/ss-standard.woff") format("woff"), url("webfonts/ss-standard.ttf") format("truetype"), url("webfonts/ss-standard.svg#SSStandard") format("svg");
   font-weight: normal;
   font-style: normal; }
 
