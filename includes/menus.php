@@ -14,7 +14,7 @@ function header_menu(){
   'theme_location'  => 'primary_menu',
   'container'       => 'nav',
   'container_class' => 'eight columns',
-  'menu_class'      => 'horizontal',
+  'menu_class'      => 'horizontal nav',
   'menu_id'         => 'primaryNav',
   'echo'            => true,
   'fallback_cb'     => false,
@@ -28,3 +28,21 @@ function header_menu(){
   wp_nav_menu($options);
 }
 
+// Social Menu in Footer
+function social_footer_menu(){
+  $options = array(
+  'theme_location'  => 'social_menu',
+  'container'       => 'nav',
+  'container_class' => 'four columns',
+  'menu_class'      => 'horizontal social nav',
+  'echo'            => true,
+  'fallback_cb'     => false,
+  'before'          => '',
+  'after'           => '',
+  'link_before'     => '',
+  'link_after'      => '',
+  'depth'           => 1,
+  'walker'          => new ECB_Walker_Nav_Menu()
+  );
+  wp_nav_menu($options);
+}
