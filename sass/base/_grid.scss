@@ -1,9 +1,9 @@
 .container{
+  @include box-sizing(border-box);
   margin: 0 auto;
   max-width: $containerWidth;
-  padding: 0 $spacing/2;
-  width:100%;
-  width: $containerWidth;
+  padding: 0 $spacing;
+  width: 100%;
 
   @include self-clear;
 }
