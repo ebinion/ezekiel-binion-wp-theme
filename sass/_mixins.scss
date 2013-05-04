@@ -8,18 +8,42 @@
   }
 }
 
-@mixin grid($totalColumns: 12){
-  @for $i from 1 through $totalColumns{
-    .span#{$i}{
-      width: ($i / $totalColumns) * 100%;
+@mixin grid($totalColumns: 12, $reset: false){
+  @if $reset == false{
+    @for $i from 1 through $totalColumns{
+      .span#{$i}{
+        width: ($i / $totalColumns) * 100%;
+      }
+    }
+  }
+  @else{
+    @for $i from 1 through $totalColumns{
+      .span#{$i}{
+        width: 100%;
+      }
     }
   }
 }
 
-@mixin offsets($totalColumns: 12){
-  @for $i from 1 through ($totalColumns - 1){
-    &.offset#{$i}{
-      margin-left: ($i / $totalColumns) * 100%;
+@mixin offsets($totalColumns: 12, $reset: false){
+  @if $reset == false{
+    @for $i from 1 through ($totalColumns - 1){
+      &.offset#{$i}{
+        margin-left: ($i / $totalColumns) * 100%;
+      }
+    }
+  }
+  @else{
+    @for $i from 1 through ($totalColumns - 1){
+      &.offset#{$i}{ margin-left: 0; }
+    }
+  }
+}
+
+@mixin breakpoint($breakpoint){
+  @if $breakpoint == "single column"{
+    @media screen and (max-width: $breakpointSingleColumn){
+      @content;
     }
   }
 }

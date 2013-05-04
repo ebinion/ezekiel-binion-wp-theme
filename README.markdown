@@ -6,3 +6,10 @@ Welcome to the WordPress theme for my personal site, ezekielbinion.com. I’m pu
 2. Give feedback in a positive and constructive way.
 3. Share what you've learned with someone else.
 4. Don’t steal! Some of the fonts and icons have been licensed by their rightful copyright owners, please support their hardwork by purchasing you're own license.
+
+## Releases
+- v0.1.1
+-- Major Grid Rewrite, including addition of responsiveness to grid
+-- Minor bug fixes
+- v0.1
+-- Basic blog functionality

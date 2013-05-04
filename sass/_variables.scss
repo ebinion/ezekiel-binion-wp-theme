@@ -24,6 +24,9 @@ $containerWidth: 1200px;
 $spacing: 20px;
 $gridGutter: 20px;
 
+// Breakpoints
+$breakpointSingleColumn: 700px;
+
 @mixin font-size($newSize){
   font-size: $newSize;
   font-size: ($newSize / 10px)rem;
