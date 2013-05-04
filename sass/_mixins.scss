@@ -1,11 +1,3 @@
-@mixin grid-column($columns, $totalColumns: 12){
-  width: ($columns / $totalColumns) * 100%;
-}
-
-@mixin offset-column($columns, $totalColumns: 12){
-  margin-left: ($columns / $totalColumns) * 100%;
-}
-
 @mixin self-clear(){
   &:before, &:after{
     content: '';
@@ -13,5 +5,21 @@
   }
   &:after{
     clear: both;
+  }
+}
+
+@mixin grid($totalColumns: 12){
+  @for $i from 1 through $totalColumns{
+    .span#{$i}{
+      width: ($i / $totalColumns) * 100%;
+    }
+  }
+}
+
+@mixin offsets($totalColumns: 12){
+  @for $i from 1 through ($totalColumns - 1){
+    &.offset#{$i}{
+      margin-left: ($i / $totalColumns) * 100%;
+    }
   }
 }

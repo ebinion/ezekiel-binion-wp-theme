@@ -22,8 +22,8 @@
 
   <script src="<?php bloginfo('template_directory'); ?>/modernizr-2.6.2.min.js"></script>
   <!-- Typekit -->
-  <script type="text/javascript" src="//use.typekit.net/nik5wjb.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <!--<script type="text/javascript" src="//use.typekit.net/nik5wjb.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>-->
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID, and uncomment below. -->
     <script>
@@ -39,7 +39,7 @@
     <header id="branding">
       <div class="container">
         <div class="clearfix">
-          <div class="four columns">
+          <div class="span4 columns">
             <a id="logo" href="<?php bloginfo('wpurl'); ?>">
               <?php bloginfo('name'); ?>
             </a>

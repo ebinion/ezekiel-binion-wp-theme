@@ -21,7 +21,7 @@ function header_menu(){
   $options = array(
   'theme_location'  => 'primary_menu',
   'container'       => 'nav',
-  'container_class' => 'eight columns',
+  'container_class' => 'span8 columns',
   'menu_class'      => 'horizontal nav',
   'menu_id'         => 'primaryNav',
   'echo'            => true,
@@ -41,7 +41,7 @@ function social_footer_menu(){
   $options = array(
   'theme_location'  => 'social_menu',
   'container'       => 'nav',
-  'container_class' => 'four columns',
+  'container_class' => 'span4 columns',
   'menu_class'      => 'horizontal social nav',
   'echo'            => true,
   'fallback_cb'     => false,

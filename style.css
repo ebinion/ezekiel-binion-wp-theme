@@ -78,7 +78,6 @@ body {
   font-size: 1.4 rem;
   font-weight: 500;
   line-height: 1.3;
-  min-width: 960px;
   -webkit-smoothing: antialiased;
   -moz-smoothing: antialiased;
   -o-smoothing: antialiased;
@@ -87,56 +86,56 @@ body {
   -webkit-widows: 2;
   widows: 2; }
 
-/* line 17, sass/base/_base.scss */
+/* line 16, sass/base/_base.scss */
 .siteWrapper {
   background: #f1f1ee url(img/background-light.jpg); }
 
-/* line 22, sass/base/_base.scss */
+/* line 21, sass/base/_base.scss */
 p {
   line-height: 24px;
   margin: 0 0 24px; }
-  /* line 26, sass/base/_base.scss */
+  /* line 25, sass/base/_base.scss */
   p.center {
     text-align: center; }
-  /* line 29, sass/base/_base.scss */
+  /* line 28, sass/base/_base.scss */
   p.right {
     text-align: right; }
 
-/* line 33, sass/base/_base.scss */
+/* line 32, sass/base/_base.scss */
 strong, b {
   font-weight: 600; }
 
-/* line 34, sass/base/_base.scss */
+/* line 33, sass/base/_base.scss */
 em, i {
   font-style: oblique; }
 
-/* line 37, sass/base/_base.scss */
+/* line 36, sass/base/_base.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: "adelle", Arial, Helvetica, Verdana, sans-serif;
   font-weight: 100; }
-  /* line 41, sass/base/_base.scss */
+  /* line 40, sass/base/_base.scss */
   h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong {
     font-family: "adelle", Arial, Helvetica, Verdana, sans-serif;
     font-weight: 600; }
-  /* line 46, sass/base/_base.scss */
+  /* line 45, sass/base/_base.scss */
   h1.center, h2.center, h3.center, h4.center, h5.center, h6.center {
     text-align: center; }
-  /* line 49, sass/base/_base.scss */
+  /* line 48, sass/base/_base.scss */
   h1.right, h2.right, h3.right, h4.right, h5.right, h6.right {
     text-align: right; }
-  /* line 53, sass/base/_base.scss */
+  /* line 52, sass/base/_base.scss */
   h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
     font-family: Arial, Helvetica, Verdana, sans-serif;
     font-weight: normal; }
 
-/* line 58, sass/base/_base.scss */
+/* line 57, sass/base/_base.scss */
 h1 {
   font-size: 32px;
   font-size: 3.2 rem;
   line-height: 36px;
   margin: 18px 0; }
 
-/* line 64, sass/base/_base.scss */
+/* line 63, sass/base/_base.scss */
 h2 {
   font-size: 18px;
   font-size: 1.8 rem;
@@ -144,7 +143,7 @@ h2 {
   line-height: 24px;
   margin: 1em 0 7px; }
 
-/* line 70, sass/base/_base.scss */
+/* line 69, sass/base/_base.scss */
 h3 {
   font-size: 16px;
   font-size: 1.6 rem;
@@ -152,17 +151,17 @@ h3 {
   line-height: 22px;
   margin: 1em 0 7px; }
 
-/* line 76, sass/base/_base.scss */
+/* line 75, sass/base/_base.scss */
 h4 {
   font-size: 14px;
   font-size: 1.4 rem; }
 
-/* line 77, sass/base/_base.scss */
+/* line 76, sass/base/_base.scss */
 h4, h5, h6 {
   font-family: "adelle-sans", Arial, Helvetica, Verdana, sans-serif;
   font-weight: 600; }
 
-/* line 85, sass/base/_base.scss */
+/* line 84, sass/base/_base.scss */
 blockquote {
   font-family: "adelle", Arial, Helvetica, Verdana, sans-serif;
   font-size: 19px;
@@ -171,13 +170,13 @@ blockquote {
   line-height: 16px;
   margin: 2em;
   position: relative; }
-  /* line 93, sass/base/_base.scss */
+  /* line 92, sass/base/_base.scss */
   blockquote p {
     line-height: 22px;
     text-align: center;
     position: relative;
     z-index: 5; }
-  /* line 100, sass/base/_base.scss */
+  /* line 99, sass/base/_base.scss */
   blockquote:before, blockquote:after {
     color: #ddd;
     content: "“";
@@ -190,12 +189,12 @@ blockquote {
     position: absolute;
     top: 20px;
     z-index: 1; }
-  /* line 112, sass/base/_base.scss */
+  /* line 111, sass/base/_base.scss */
   blockquote:after {
     content: "”";
     left: auto;
     right: -40px; }
-  /* line 118, sass/base/_base.scss */
+  /* line 117, sass/base/_base.scss */
   blockquote cite {
     display: block;
     font-family: "adelle-sans", Arial, Helvetica, Verdana, sans-serif;
@@ -205,67 +204,67 @@ blockquote {
     font-weight: 700;
     text-transform: uppercase;
     text-align: right; }
-    /* line 127, sass/base/_base.scss */
+    /* line 126, sass/base/_base.scss */
     blockquote cite:before {
       content: '—'; }
-    /* line 131, sass/base/_base.scss */
+    /* line 130, sass/base/_base.scss */
     blockquote cite .job {
       font-weight: normal;
       text-transform: none; }
 
-/* line 137, sass/base/_base.scss */
+/* line 136, sass/base/_base.scss */
 pre {
   background: #fff;
   border: 1px solid #ddddd9;
   padding: 10px 20px;
   margin: 24px 0; }
 
-/* line 143, sass/base/_base.scss */
+/* line 142, sass/base/_base.scss */
 code {
   font-family: Monaco, Courier, "New Courier", sans-serif;
   font-size: 13px;
   font-size: 1.3 rem; }
 
-/* line 147, sass/base/_base.scss */
+/* line 146, sass/base/_base.scss */
 small {
   color: #777;
   font-size: .75em; }
 
-/* line 153, sass/base/_base.scss */
+/* line 152, sass/base/_base.scss */
 ul {
   list-style: disc;
   margin: 0 1em 1em 1.3em; }
 
-/* line 157, sass/base/_base.scss */
+/* line 156, sass/base/_base.scss */
 ol {
   list-style: decimal;
   margin: 0 1em 1em 1.5em; }
 
-/* line 161, sass/base/_base.scss */
+/* line 160, sass/base/_base.scss */
 li {
   margin: .5em 0; }
 
-/* line 166, sass/base/_base.scss */
+/* line 165, sass/base/_base.scss */
 a {
   color: #007ab6;
   text-decoration: none; }
-  /* line 170, sass/base/_base.scss */
+  /* line 169, sass/base/_base.scss */
   a:hover, a:focus {
     outline: 0 none transparent;
     text-decoration: underline; }
 
-/* line 176, sass/base/_base.scss */
+/* line 175, sass/base/_base.scss */
 a.text.button {
   color: #a2a2a2;
   font-size: 13px;
   font-size: 1.3 rem;
   vertical-align: middle; }
-  /* line 181, sass/base/_base.scss */
+  /* line 180, sass/base/_base.scss */
   a.text.button:hover {
     color: #000;
     text-decoration: none; }
 
-/* line 187, sass/base/_base.scss */
+/* line 186, sass/base/_base.scss */
 .sectionLabel {
   color: #aaa;
   font-size: 12px;
@@ -275,44 +274,44 @@ a.text.button {
   margin: 2em 0 .5em;
   text-align: center;
   text-transform: lowercase; }
-  /* line 196, sass/base/_base.scss */
+  /* line 195, sass/base/_base.scss */
   .sectionLabel.left {
     text-align: left; }
 
-/* line 201, sass/base/_base.scss */
+/* line 200, sass/base/_base.scss */
 ul.portfolioPreviews {
   list-style: none none;
   margin: 0 auto;
   padding: 0;
   width: 520px; }
-  /* line 207, sass/base/_base.scss */
+  /* line 206, sass/base/_base.scss */
   ul.portfolioPreviews li, ul.portfolioPreviews a {
     display: block;
     height: 230px;
     width: 230px; }
-  /* line 212, sass/base/_base.scss */
+  /* line 211, sass/base/_base.scss */
   ul.portfolioPreviews li {
     float: left;
     border: 1px solid #dadad2;
     height: 250px;
     margin-right: 12px;
     width: 250px; }
-    /* line 219, sass/base/_base.scss */
+    /* line 218, sass/base/_base.scss */
     ul.portfolioPreviews li:last-child {
       margin-right: 0; }
-    /* line 222, sass/base/_base.scss */
+    /* line 221, sass/base/_base.scss */
     ul.portfolioPreviews li a {
       border: 10px solid #e5e5e0;
       overflow: hidden;
       position: relative;
       height: 230px;
       width: 230px; }
-      /* line 229, sass/base/_base.scss */
+      /* line 228, sass/base/_base.scss */
       ul.portfolioPreviews li a img {
         border: 1px solid #dadad2;
         height: 229px;
         width: 229px; }
-      /* line 235, sass/base/_base.scss */
+      /* line 234, sass/base/_base.scss */
       ul.portfolioPreviews li a .overlay {
         display: table-cell;
         background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 250, color-stop(0%, rgba(0, 0, 0, 0.5)), color-stop(100%, #000000));
@@ -331,10 +330,10 @@ ul.portfolioPreviews {
         transition: all 0.3s ease-in-out;
         width: 100%;
         vertical-align: bottom; }
-      /* line 247, sass/base/_base.scss */
+      /* line 246, sass/base/_base.scss */
       ul.portfolioPreviews li a:hover .overlay {
         opacity: .99; }
-      /* line 250, sass/base/_base.scss */
+      /* line 249, sass/base/_base.scss */
       ul.portfolioPreviews li a h3 {
         color: #fff;
         font-family: "adelle", Arial, Helvetica, Verdana, sans-serif;
@@ -345,7 +344,7 @@ ul.portfolioPreviews {
         text-align: center;
         text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 1px;
         vertical-align: bottom; }
-        /* line 260, sass/base/_base.scss */
+        /* line 259, sass/base/_base.scss */
         ul.portfolioPreviews li a h3 span {
           font-family: "adelle-sans", Arial, Helvetica, Verdana, sans-serif;
           font-size: 12px;
@@ -471,181 +470,118 @@ textarea {
   box-sizing: border-box;
   width: 100%; }
 
-/* line 1, sass/base/_grid.scss */
-.container {
+/* line 2, sass/base/_grid.scss */
+.container, .columns, .column, .row, .clearfix {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 0 auto;
-  max-width: 1200px;
-  padding: 0 20px;
+  box-sizing: border-box; }
+
+/* line 5, sass/base/_grid.scss */
+.container, .row, .clearfix {
   width: 100%; }
-  /* line 10, sass/_mixins.scss */
-  .container:before, .container:after {
+  /* line 2, sass/_mixins.scss */
+  .container:before, .container:after, .row:before, .row:after, .clearfix:before, .clearfix:after {
     content: '';
     display: table; }
-  /* line 14, sass/_mixins.scss */
-  .container:after {
+  /* line 6, sass/_mixins.scss */
+  .container:after, .row:after, .clearfix:after {
     clear: both; }
 
 /* line 11, sass/base/_grid.scss */
+.container {
+  margin: 0 auto;
+  max-width: 1200px; }
+
+/* line 16, sass/base/_grid.scss */
 .columns, .column {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   float: left;
   padding: 0 10px; }
-  /* line 16, sass/base/_grid.scss */
-  .columns.noPad, .column.noPad {
-    padding: 0; }
 
 /* line 21, sass/base/_grid.scss */
-.row, .clearfix {
-  width: 100%; }
-  /* line 10, sass/_mixins.scss */
-  .row:before, .row:after, .clearfix:before, .clearfix:after {
-    content: '';
-    display: table; }
-  /* line 14, sass/_mixins.scss */
-  .row:after, .clearfix:after {
-    clear: both; }
-  /* line 25, sass/base/_grid.scss */
-  .row.reverse .columns, .row.reverse .column, .clearfix.reverse .columns, .clearfix.reverse .column {
-    float: right; }
-    /* line 28, sass/base/_grid.scss */
-    .row.reverse .columns .columns, .row.reverse .columns .column, .row.reverse .column .columns, .row.reverse .column .column, .clearfix.reverse .columns .columns, .clearfix.reverse .columns .column, .clearfix.reverse .column .columns, .clearfix.reverse .column .column {
-      float: left; }
-
-/* line 33, sass/base/_grid.scss */
 .row {
   margin-bottom: 20px; }
 
-/* line 38, sass/base/_grid.scss */
-.one {
+/* line 13, sass/_mixins.scss */
+.span1 {
   width: 8.33333%; }
 
-/* line 39, sass/base/_grid.scss */
-.two {
+/* line 13, sass/_mixins.scss */
+.span2 {
   width: 16.66667%; }
 
-/* line 40, sass/base/_grid.scss */
-.three {
+/* line 13, sass/_mixins.scss */
+.span3 {
   width: 25%; }
 
-/* line 41, sass/base/_grid.scss */
-.four {
+/* line 13, sass/_mixins.scss */
+.span4 {
   width: 33.33333%; }
 
-/* line 42, sass/base/_grid.scss */
-.five {
+/* line 13, sass/_mixins.scss */
+.span5 {
   width: 41.66667%; }
 
-/* line 43, sass/base/_grid.scss */
-.six {
+/* line 13, sass/_mixins.scss */
+.span6 {
   width: 50%; }
 
-/* line 44, sass/base/_grid.scss */
-.seven {
+/* line 13, sass/_mixins.scss */
+.span7 {
   width: 58.33333%; }
 
-/* line 45, sass/base/_grid.scss */
-.eight {
+/* line 13, sass/_mixins.scss */
+.span8 {
   width: 66.66667%; }
 
-/* line 46, sass/base/_grid.scss */
-.nine {
+/* line 13, sass/_mixins.scss */
+.span9 {
   width: 75%; }
 
-/* line 47, sass/base/_grid.scss */
-.ten {
+/* line 13, sass/_mixins.scss */
+.span10 {
   width: 83.33333%; }
 
-/* line 48, sass/base/_grid.scss */
-.eleven {
+/* line 13, sass/_mixins.scss */
+.span11 {
   width: 91.66667%; }
 
-/* line 49, sass/base/_grid.scss */
-.twelve {
+/* line 13, sass/_mixins.scss */
+.span12 {
   width: 100%; }
 
-/* line 52, sass/base/_grid.scss */
-.offset-one {
+/* line 21, sass/_mixins.scss */
+.columns.offset1, .column.offset1 {
   margin-left: 8.33333%; }
-
-/* line 53, sass/base/_grid.scss */
-.offset-two {
+/* line 21, sass/_mixins.scss */
+.columns.offset2, .column.offset2 {
   margin-left: 16.66667%; }
-
-/* line 54, sass/base/_grid.scss */
-.offset-three {
+/* line 21, sass/_mixins.scss */
+.columns.offset3, .column.offset3 {
   margin-left: 25%; }
-
-/* line 55, sass/base/_grid.scss */
-.offset-four {
+/* line 21, sass/_mixins.scss */
+.columns.offset4, .column.offset4 {
   margin-left: 33.33333%; }
-
-/* line 56, sass/base/_grid.scss */
-.offset-five {
+/* line 21, sass/_mixins.scss */
+.columns.offset5, .column.offset5 {
   margin-left: 41.66667%; }
-
-/* line 57, sass/base/_grid.scss */
-.offset-six {
+/* line 21, sass/_mixins.scss */
+.columns.offset6, .column.offset6 {
   margin-left: 50%; }
-
-/* line 58, sass/base/_grid.scss */
-.offset-seven {
+/* line 21, sass/_mixins.scss */
+.columns.offset7, .column.offset7 {
   margin-left: 58.33333%; }
-
-/* line 59, sass/base/_grid.scss */
-.offset-eight {
+/* line 21, sass/_mixins.scss */
+.columns.offset8, .column.offset8 {
   margin-left: 66.66667%; }
-
-/* line 60, sass/base/_grid.scss */
-.offset-nine {
+/* line 21, sass/_mixins.scss */
+.columns.offset9, .column.offset9 {
   margin-left: 75%; }
-
-/* line 61, sass/base/_grid.scss */
-.offset-ten {
+/* line 21, sass/_mixins.scss */
+.columns.offset10, .column.offset10 {
   margin-left: 83.33333%; }
-
-/* line 62, sass/base/_grid.scss */
-.offset-eleven {
+/* line 21, sass/_mixins.scss */
+.columns.offset11, .column.offset11 {
   margin-left: 91.66667%; }
-
-/* line 66, sass/base/_grid.scss */
-.four .one {
-  width: 25%; }
-/* line 67, sass/base/_grid.scss */
-.four .two {
-  width: 50%; }
-/* line 68, sass/base/_grid.scss */
-.four .three {
-  width: 75%; }
-/* line 69, sass/base/_grid.scss */
-.four .four {
-  width: 100%; }
-
-/* line 72, sass/base/_grid.scss */
-.five .one {
-  width: 20%; }
-/* line 73, sass/base/_grid.scss */
-.five .two {
-  width: 40%; }
-/* line 74, sass/base/_grid.scss */
-.five .three {
-  width: 60%; }
-/* line 75, sass/base/_grid.scss */
-.five .four {
-  width: 80%; }
-/* line 76, sass/base/_grid.scss */
-.five .five {
-  width: 100%; }
-
-/* line 80, sass/base/_grid.scss */
-.sidebar.column, .sidebar.columns {
-  padding: 0 0 0 20px;
-  position: relative;
-  left: 10px; }
 
 /* line 1, sass/base/_header_footer.scss */
 #branding {
@@ -654,7 +590,7 @@ textarea {
   position: relative;
   top: -1px;
   z-index: 99; }
-  /* line 9, sass/base/_header_footer.scss */
+  /* line 8, sass/base/_header_footer.scss */
   #branding #logo {
     background: transparent url(img/e-logo.png) no-repeat 0 0;
     background-image: url(img/e-logo.svg);
@@ -664,11 +600,11 @@ textarea {
     overflow: hidden;
     text-indent: 150%;
     white-space: nowrap; }
-  /* line 21, sass/base/_header_footer.scss */
+  /* line 20, sass/base/_header_footer.scss */
   #branding nav ul {
     float: right;
     margin-top: 7px; }
-  /* line 25, sass/base/_header_footer.scss */
+  /* line 24, sass/base/_header_footer.scss */
   #branding nav a {
     color: #555555;
     font-family: "adelle", Arial, Helvetica, Verdana, sans-serif;
@@ -680,35 +616,35 @@ textarea {
     -moz-transition: color 0.3s;
     -o-transition: color 0.3s;
     transition: color 0.3s; }
-    /* line 33, sass/base/_header_footer.scss */
+    /* line 32, sass/base/_header_footer.scss */
     #branding nav a:hover, #branding nav a:focus {
       color: #007ab6;
       text-decoration: none; }
 
-/* line 41, sass/base/_header_footer.scss */
+/* line 40, sass/base/_header_footer.scss */
 .project #branding {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0.5)), color-stop(100%, rgba(0, 0, 0, 0)));
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   background: -moz-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   background: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); }
-  /* line 43, sass/base/_header_footer.scss */
+  /* line 42, sass/base/_header_footer.scss */
   .project #branding #logo a {
     background: url(img/e-logo-white.png) no-repeat 0 0; }
-    /* line 46, sass/base/_header_footer.scss */
+    /* line 45, sass/base/_header_footer.scss */
     .project #branding #logo a img {
       opacity: 0; }
 
-/* line 52, sass/base/_header_footer.scss */
+/* line 51, sass/base/_header_footer.scss */
 #siteFooter {
   background: #fff;
   border-top: 1px solid #e5e5e0;
   margin-top: 0;
   padding: 40px 0 20px 0; }
-  /* line 58, sass/base/_header_footer.scss */
+  /* line 57, sass/base/_header_footer.scss */
   #siteFooter .social {
     float: right; }
-  /* line 61, sass/base/_header_footer.scss */
+  /* line 60, sass/base/_header_footer.scss */
   #siteFooter .copyright {
     font-size: 11px;
     font-size: 1.1 rem;
@@ -716,7 +652,7 @@ textarea {
     font-style: oblique;
     line-height: 13px;
     margin-top: 5px; }
-    /* line 68, sass/base/_header_footer.scss */
+    /* line 67, sass/base/_header_footer.scss */
     #siteFooter .copyright a {
       color: #777; }
 
