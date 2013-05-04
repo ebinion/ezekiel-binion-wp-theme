@@ -1,4 +1,12 @@
 <?php
+/**
+ * Place functions that generate navigation and menus here.
+ *
+ * @package WordPress
+ * @subpackage Ezekiel
+ * @since Ezekiel 0.1
+*/ 
+
 // Custom Walker Menu class = "ECB_Walker_Nav_Menu"
 require_once("ecb_walker_nav_menu.php");
 

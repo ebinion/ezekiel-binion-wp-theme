@@ -1,3 +1,12 @@
+<?php
+/**
+ * The fallback template for page content.
+ *
+ * @package WordPress
+ * @subpackage Ezekiel
+ * @since Ezekiel 0.1
+*/ 
+?>
 <?php get_template_part("header"); ?>
 
 <div class="container">

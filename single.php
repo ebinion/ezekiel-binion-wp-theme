@@ -1,3 +1,12 @@
+<?php
+/**
+ * The template for HTML head and displaying the site header
+ *
+ * @package WordPress
+ * @subpackage Ezekiel
+ * @since Ezekiel 0.1
+*/ 
+?>
 <?php get_template_part("header"); ?>
 
 <?php if(have_posts()): while(have_posts()): the_post(); ?>

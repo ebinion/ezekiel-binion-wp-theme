@@ -1,3 +1,12 @@
+<?php
+/**
+ * The footer template for the site.
+ *
+ * @package WordPress
+ * @subpackage Ezekiel
+ * @since Ezekiel 0.1
+*/ 
+?>
   </div>
 
     <footer id="siteFooter">
