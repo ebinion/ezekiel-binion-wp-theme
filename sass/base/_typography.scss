@@ -42,6 +42,15 @@ h1, .post_title{
   -o-font-feature-settings: "lnum" 1;
   font-feature-settings: "lnum" 1;
   text-transform: capitalize;
+
+  a{ 
+    color: darken($headlineColor, 10%);
+
+    &:hover, &:focus{
+      color: $linkColor;
+      text-decoration: none;
+    }
+  }
 }
 
 h2,h3,h4,h5,h6{ 
