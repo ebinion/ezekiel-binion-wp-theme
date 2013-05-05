@@ -1,0 +1,169 @@
+// Do not include any style in base that should not be imported into the Rich Text Editor
+html{
+  font-size: ($baseSize / 16px) * 100%;
+}
+body{
+  background: #fff;
+  color: $bodyTextColor;
+  @include stackBody;
+  @include font-size($baseSize);
+  line-height: 30px;
+  @include font-smoothing(antialiased);
+  text-rendering: optimizeLegibility;
+  -webkit-widows: 2;
+  widows: 2;
+}
+
+// Font basics
+p{
+  line-height: 30px;
+  margin: 0 0 24px;
+
+  &.center{
+    text-align: center;
+  }
+  &.right{
+    text-align: right;
+  }
+}
+strong, b{ @include stackBodyBold; }
+em, i{ font-style: oblique; }
+
+// Headings
+h1, .post_title{
+  @include font-size(56px);
+  @include stackPrimaryHeadline;
+  line-height: 60px;
+  margin:0;
+  -moz-font-feature-settings: "lnum=1";
+  -ms-font-feature-settings: "lnum" 1;
+  -webkit-font-feature-settings: "lnum" 1;
+  -o-font-feature-settings: "lnum" 1;
+  font-feature-settings: "lnum" 1;
+}
+
+h2,h3,h4,h5,h6{ @include stackHeadline; }
+
+h1,h2,h3,h4,h5,h6{
+  &.center{
+    text-align: center;
+  }
+  &.right{
+    text-align: right;
+  }
+}
+
+
+h2{ 
+  @include font-size(18px);
+  font-weight: 600;
+  line-height: 24px;
+  margin: 1em 0 7px;
+}
+h3{ 
+  @include font-size(16px);
+  font-weight: 600;
+  line-height: 22px;
+  margin: 1em 0 7px;
+}
+h4{ @include font-size(14px); }
+
+blockquote{
+  @include stackQuote;
+  @include font-size(19px);
+  font-style: oblique;
+  line-height: 16px;
+  margin: 2em;
+  position: relative;
+
+  p{
+    line-height: 22px;
+    text-align: center;
+    position: relative;
+    z-index: 5;
+  }
+
+  &:before, &:after{
+    color: #ddd;
+    content: "“";
+    @include font-size(100px);
+    font-family: fontStack;
+    font-style: normal;
+    font-weight: 700;
+    left: -40px;
+    position: absolute;
+    top: 20px;
+    z-index:1;
+  }
+  &:after{
+    content: "”";
+    left: auto;
+    right: -40px;
+  }
+
+  cite{
+    display: block;
+    @include stackBodyBold;
+    @include font-size(11px);
+    text-transform: uppercase;
+    text-align: right;
+
+    &:before{
+      content: '—';
+    }
+
+    .job{
+      font-weight: normal;
+      text-transform: none;
+    }
+  }
+}
+pre{
+  background: #fff;
+  border: 1px solid #ddddd9;
+  padding: 10px 20px;
+  margin: 24px 0;
+}
+code{
+  font-family: Monaco, Courier, "New Courier", sans-serif;
+  @include font-size(13px);
+}
+small{
+  color: #777;
+  font-size: .75em;
+}
+
+// Lists
+ul{
+  list-style: disc;
+  margin: 0 1em 1em 1.3em;
+}
+ol{
+  list-style: decimal;
+  margin: 0 1em 1em 1.5em;
+}
+li{
+  margin: .5em 0;
+}
+
+// Links
+a{
+  color: $linkColor;
+  text-decoration: none;
+
+  &:hover, &:focus{
+    outline:0 none transparent;
+    text-decoration: underline;
+  }
+}
+
+a.text.button{
+  color: lighten($bodyTextColor, 30%);
+  @include font-size(13px);
+  vertical-align: middle;
+
+  &:hover{
+    color: #000;
+    text-decoration: none;
+  }
+}

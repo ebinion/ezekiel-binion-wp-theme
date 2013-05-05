@@ -22,7 +22,7 @@
 
   <script src="<?php bloginfo('template_directory'); ?>/modernizr-2.6.2.min.js"></script>
   <!-- Typekit -->
-  <script type="text/javascript" src="//use.typekit.net/nik5wjb.js"></script>
+  <script type="text/javascript" src="//use.typekit.net/ekq4qad.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID, and uncomment below. -->

@@ -1,8 +1,9 @@
 // Font stuff
-$baseSize: 14px;
-$fontBaseStack: Arial, Helvetica, Verdana, sans-serif;
-$fontStack: "adelle-sans", $fontBaseStack;
-$headlineStack: "adelle", $fontBaseStack;
+$baseSize: 18px;
+$fontBaseStack: Arial, Helvetica, Verdana, sans-serif; // Base is meant for writing the rest of the stack out.
+$fontStack: "franklin-gothic-urw", $fontBaseStack;
+$headlineStack: "franklin-gothic-urw-comp", $fontBaseStack;
+$primaryHeadlineStack: "abril-display", $fontBaseStack;
 $headlineBoldStack: $headlineStack;
 
 // Colors
@@ -27,6 +28,7 @@ $gridGutter: 20px;
 // Breakpoints
 $breakpointSingleColumn: 700px;
 
+// Font Mixins
 @mixin font-size($newSize){
   font-size: $newSize;
   font-size: ($newSize / 10px)rem;
@@ -37,4 +39,29 @@ $breakpointSingleColumn: 700px;
   -moz-smoothing: $option;
   -o-smoothing: $option;
   font-smoothing: $option;
+}
+
+@mixin stackPrimaryHeadline(){
+  font-family: $primaryHeadlineStack;
+  font-weight: 400;
+}
+
+@mixin stackHeadline(){
+  font-family: $headlineStack;
+  font-weight: 400;
+}
+
+@mixin stackBody(){
+  font-family: $fontStack;
+  font-weight: 400;
+}
+
+@mixin stackBodyBold(){
+  font-family: $fontStack;
+  font-weight: 700;
+}
+
+@mixin stackQuote(){
+  font-family: $fontStack;
+  font-weight: 300;
 }
