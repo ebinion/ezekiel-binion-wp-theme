@@ -30,16 +30,20 @@
   @include offsets(12);
 }
 
-@include breakpoint("single column"){
-  @include grid(12, true);
-  .columns, .column{
-    @include offsets(12, true);
+// Add more padding once the container edges touch the side of the screen
+@include breakpoint($containerWidth + 20px){
+  .container{
+    padding: 0 $gridGutter;
   }
 }
 
-// Add more padding once the container edges touch the side of the screen
-@media screen and (max-width: $containerWidth + 20px){
+@include breakpoint($breakpointSingleColumn){
   .container{
-    padding: 0 $gridGutter;
+    padding: 0 $gridGutter/2;
+  }
+
+  @include grid(12, true);
+  .columns, .column{
+    @include offsets(12, true);
   }
 }

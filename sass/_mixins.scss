@@ -41,9 +41,7 @@
 }
 
 @mixin breakpoint($breakpoint){
-  @if $breakpoint == "single column"{
-    @media screen and (max-width: $breakpointSingleColumn){
-      @content;
-    }
+  @media screen and (max-width: $breakpoint){
+    @content;
   }
 }

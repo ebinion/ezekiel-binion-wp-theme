@@ -16,21 +16,6 @@
   margin: 42px 0 24px;
   text-align: center;
 }
-.post_title{
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 42px;
-}
-.post_time{
-  color: #999;
-  display: block;
-  font-family: $headlineBoldStack;
-  @include font-size(11px);
-  font-weight: 700;
-  line-height: 18px;
-  text-align: center;
-  text-transform: lowercase;
-}
 
 .article.list{
   list-style: none;
