@@ -1,0 +1,19 @@
+// Use this Sass file to import styles used in the WordPress rich text editor
+@charset "UTF-8";
+
+@import "compass";
+@import "compass/reset";
+@import "variables";
+@import "mixins";
+// Base
+@import "base/base";
+@import "base/buttons";
+@import "base/forms";
+@import "base/ss-social";
+@import "base/ss-standard";
+@import "base/typography";
+
+// Adding padding to the editor's body
+body{
+  padding: 20px;
+}

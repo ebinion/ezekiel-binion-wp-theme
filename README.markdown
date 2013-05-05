@@ -14,6 +14,7 @@ Welcome to the WordPress theme for my personal site, <a href="http://ezekielbini
 
 - Typography moved to it's own Sass file
 - Changing typography
+- Creating editor style file for WordPress's built-in rich text editor
 
 ### v0.2
 
