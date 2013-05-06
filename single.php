@@ -20,7 +20,7 @@
         <div class="content">
           <?php the_content(); ?>
         </div>
-        <div class="tilde">~</div>
+        <?php comments_template(); ?>
       </article>
     </div>
   </div>

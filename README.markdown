@@ -12,6 +12,7 @@ Welcome to the WordPress theme for my personal site, <a href="http://ezekielbini
 
 ### v0.4
 
+- Adding commenting ability
 - Headline adjustments
 
 ### v0.3
