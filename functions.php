@@ -7,10 +7,8 @@
  * @since Ezekiel 0.1
 */ 
 
-
-// Enable support for editor styles
-add_editor_style();
-
+// Configuration for front-end
+require_once("includes/front-end.php");
 
 // Nav Menus
 require_once("includes/menus.php");
