@@ -62,6 +62,13 @@ body {
 /* line 5, sass/base/_base.scss */
 .siteWrapper {
   background: #f1f1ee url(img/background-light.jpg); }
+  /* line 2, sass/_mixins.scss */
+  .siteWrapper:before, .siteWrapper:after {
+    content: '';
+    display: table; }
+  /* line 6, sass/_mixins.scss */
+  .siteWrapper:after {
+    clear: both; }
 
 /* line 1, sass/base/_buttons.scss */
 .button, button, input[type="submit"], input[type="button"] {

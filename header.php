@@ -36,11 +36,9 @@
     <header id="branding">
       <div class="container">
         <div class="clearfix">
-          <div class="span4 columns">
-            <a id="logo" href="<?php bloginfo('wpurl'); ?>">
+            <a id="logo" class="logo" href="<?php bloginfo('wpurl'); ?>">
               <?php bloginfo('name'); ?>
             </a>
-          </div>
           <?php header_menu(); ?>
         </div>
       </div>

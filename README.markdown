@@ -10,10 +10,16 @@ Welcome to the WordPress theme for my personal site, <a href="http://ezekielbini
 
 ## Releases
 
-### v0.4
+### v0.5
 
 - Adding commenting ability
+
+
+### v0.4
+
 - Headline adjustments
+- Redesigning the site header
+- Installing Modernizr
 
 ### v0.3
 

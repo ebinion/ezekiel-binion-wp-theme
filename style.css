@@ -72,6 +72,13 @@ body {
 /* line 5, sass/base/_base.scss */
 .siteWrapper {
   background: #f1f1ee url(img/background-light.jpg); }
+  /* line 2, sass/_mixins.scss */
+  .siteWrapper:before, .siteWrapper:after {
+    content: '';
+    display: table; }
+  /* line 6, sass/_mixins.scss */
+  .siteWrapper:after {
+    clear: both; }
 
 /* line 1, sass/base/_buttons.scss */
 .button, button, input[type="submit"], input[type="button"] {
@@ -395,27 +402,44 @@ textarea {
   .columns.offset11, .column.offset11 {
     margin-left: 0; } }
 /* line 1, sass/base/_header_footer.scss */
+.logo {
+  background: transparent url(img/e-logo.svg) no-repeat 0 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #555;
+  display: block;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 200;
+  height: 61px;
+  letter-spacing: 8px;
+  line-height: 0;
+  overflow: hidden;
+  padding: 31px 0 0 80px;
+  text-transform: uppercase;
+  width: 385px;
+  white-space: nowrap; }
+  /* line 19, sass/base/_header_footer.scss */
+  .logo:hover, .logo:focus {
+    text-decoration: none; }
+
+/* line 30, sass/base/_header_footer.scss */
 #branding {
-  margin-bottom: 40px;
-  padding: 20px 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 141px;
+  margin: 0 0 80px;
+  padding: 40px 0;
   position: relative;
   top: -1px;
   z-index: 99; }
-  /* line 8, sass/base/_header_footer.scss */
-  #branding #logo {
-    background: transparent url(img/e-logo.png) no-repeat 0 0;
-    background-image: url(img/e-logo.svg);
-    display: block;
-    height: 60px;
-    max-width: 250px;
-    overflow: hidden;
-    text-indent: 150%;
-    white-space: nowrap; }
-  /* line 20, sass/base/_header_footer.scss */
+  /* line 42, sass/base/_header_footer.scss */
   #branding nav ul {
     float: right;
     margin-top: 7px; }
-  /* line 24, sass/base/_header_footer.scss */
+  /* line 46, sass/base/_header_footer.scss */
   #branding nav a {
     color: #555555;
     font-family: "franklin-gothic-urw-comp", Arial, Helvetica, Verdana, sans-serif;
@@ -427,35 +451,35 @@ textarea {
     -moz-transition: color 0.3s;
     -o-transition: color 0.3s;
     transition: color 0.3s; }
-    /* line 32, sass/base/_header_footer.scss */
+    /* line 54, sass/base/_header_footer.scss */
     #branding nav a:hover, #branding nav a:focus {
       color: #007ab6;
       text-decoration: none; }
 
-/* line 40, sass/base/_header_footer.scss */
+/* line 62, sass/base/_header_footer.scss */
 .project #branding {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0.5)), color-stop(100%, rgba(0, 0, 0, 0)));
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   background: -moz-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   background: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); }
-  /* line 42, sass/base/_header_footer.scss */
+  /* line 64, sass/base/_header_footer.scss */
   .project #branding #logo a {
     background: url(img/e-logo-white.png) no-repeat 0 0; }
-    /* line 45, sass/base/_header_footer.scss */
+    /* line 67, sass/base/_header_footer.scss */
     .project #branding #logo a img {
       opacity: 0; }
 
-/* line 51, sass/base/_header_footer.scss */
+/* line 73, sass/base/_header_footer.scss */
 #siteFooter {
   background: #fff;
   border-top: 1px solid #e5e5e0;
   margin-top: 0;
   padding: 40px 0 20px 0; }
-  /* line 57, sass/base/_header_footer.scss */
+  /* line 79, sass/base/_header_footer.scss */
   #siteFooter .social {
     float: right; }
-  /* line 60, sass/base/_header_footer.scss */
+  /* line 82, sass/base/_header_footer.scss */
   #siteFooter .copyright {
     font-size: 11px;
     font-size: 1.1 rem;
@@ -463,7 +487,7 @@ textarea {
     font-style: oblique;
     line-height: 13px;
     margin-top: 5px; }
-    /* line 67, sass/base/_header_footer.scss */
+    /* line 89, sass/base/_header_footer.scss */
     #siteFooter .copyright a {
       color: #777; }
 

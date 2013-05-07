@@ -21,7 +21,7 @@ function header_menu(){
   $options = array(
   'theme_location'  => 'primary_menu',
   'container'       => 'nav',
-  'container_class' => 'span8 columns',
+  // 'container_class' => 'span8 columns',
   'menu_class'      => 'horizontal nav',
   'menu_id'         => 'primaryNav',
   'echo'            => true,

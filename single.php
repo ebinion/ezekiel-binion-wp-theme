@@ -20,7 +20,7 @@
         <div class="content">
           <?php the_content(); ?>
         </div>
-        <?php comments_template(); ?>
+        <?php // comments_template(); ?>
       </article>
     </div>
   </div>

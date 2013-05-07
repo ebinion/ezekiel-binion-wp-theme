@@ -4,4 +4,6 @@ body{
 }
 .siteWrapper{
   background: $backgroundColor url(img/background-light.jpg);
+  @include self-clear;
+  // padding-top: 20px;
 }
