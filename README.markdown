@@ -26,6 +26,7 @@ Welcome to the WordPress theme for my personal site, <a href="http://ezekielbini
 - Typography moved to it's own Sass file
 - Changing type faces and baseline grid
 - Creating editor style file for WordPress's built-in rich text editor
+- Switched Typekit
 
 ### v0.2
 

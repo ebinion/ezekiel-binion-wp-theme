@@ -1,7 +1,6 @@
 .logo{
   background: transparent url(img/e-logo.svg) no-repeat 0 0;
   @include box-sizing(border-box);
-  // background-image: url(img/e-logo.svg);
   color: #555;
   display: block;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -20,13 +19,18 @@
     text-decoration: none;
   }
 }
-
-// #branding .logo{
-//   left: 20px;
-//   position: absolute;
-//   top: 40px;
-// }
-
+.no-svg .logo{
+  background-image: url(img/e-logo.png);
+}
+#branding .logo{
+  left: 20px;
+  position: absolute;
+  top: 20px;
+}
+#primaryNav{
+  margin-top: 27px;
+  text-transform: lowercase;
+}
 #branding{
   @include box-sizing(border-box);
   // background: #fff;
@@ -34,30 +38,27 @@
   height: 141px;
   margin: 0 0 80px;
   padding: 40px 0;
-  position: relative;
-  top: -1px;
-  z-index:99;
-  
-  nav{
-    ul{
-      float: right;
-      margin-top: 7px;
-    }
-    a{
-      color: $bodyTextColor;
-      font-family: $headlineStack;
-      line-height: 44px;
-      padding:0 20px;
-      @include font-size(16px);
-      @include transition(color 0.3s);
+}
 
-      &:hover, &:focus{
-        color: $linkColor;
-        text-decoration: none;
-      }
+.horizontal.nav{
+  float: right;
+  margin-top: 7px;
+
+  a{
+    color: $bodyTextColor;
+    font-family: $headlineStack;
+    line-height: 44px;
+    padding:0 20px;
+    @include font-size(16px);
+    @include transition(color 0.3s);
+
+    &:hover, &:focus{
+      color: $linkColor;
+      text-decoration: none;
     }
   }
 }
+
 
 .project #branding{
   @include background( linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,0)) );

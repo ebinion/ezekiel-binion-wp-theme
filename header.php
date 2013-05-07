@@ -35,7 +35,7 @@
   <div class="siteWrapper">
     <header id="branding">
       <div class="container">
-        <div class="clearfix">
+        <div class="clearfix positioned">
             <a id="logo" class="logo" href="<?php bloginfo('wpurl'); ?>">
               <?php bloginfo('name'); ?>
             </a>

@@ -7,3 +7,6 @@ body{
   @include self-clear;
   // padding-top: 20px;
 }
+.positioned{
+  position: relative;
+}

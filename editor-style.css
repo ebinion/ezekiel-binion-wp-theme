@@ -70,6 +70,10 @@ body {
   .siteWrapper:after {
     clear: both; }
 
+/* line 10, sass/base/_base.scss */
+.positioned {
+  position: relative; }
+
 /* line 1, sass/base/_buttons.scss */
 .button, button, input[type="submit"], input[type="button"] {
   color: #333;
