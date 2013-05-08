@@ -20,8 +20,6 @@
 
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 
-  <script src="<?php bloginfo('template_directory'); ?>/modernizr-2.6.2.min.js"></script>
-
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID, and uncomment below. -->
   <script>
     var _gaq=[['_setAccount','UA-23433841-1'],['_trackPageview']];
