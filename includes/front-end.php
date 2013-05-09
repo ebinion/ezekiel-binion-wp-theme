@@ -24,3 +24,9 @@ function ecb_load_scripts(){
   wp_enqueue_script( 'modernizr-2.6.2', get_bloginfo('template_directory') . '/js/modernizr-2.6.2.min.js', false, '1.0');
 }
 add_action('wp_enqueue_scripts', 'ecb_load_scripts');
+
+// A shortcode to handle citations in quotes
+function cite_handler($atts, $content = null){
+  return '<cite>' . do_shortcode($content) . '</cite>';
+}
+add_shortcode('cite', 'cite_handler');
