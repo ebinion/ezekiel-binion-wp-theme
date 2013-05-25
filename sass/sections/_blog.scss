@@ -43,3 +43,31 @@
 .right{
   text-align: right;
 }
+
+
+.list{
+  list-style: none;
+  margin: 1em 0;
+  padding: 0;
+
+  // Comments List
+  .comment{
+
+  }
+  
+}
+
+
+.comment-body{
+  padding-left: 100px;
+  position: relative;
+}
+.comment-author .fn{
+  @include stackBodyBold;
+}
+.avatar{
+  border-radius: 10px;
+  left: 0;
+  position: absolute;
+  top: 0;
+}

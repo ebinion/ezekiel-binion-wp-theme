@@ -46,25 +46,33 @@ $breakpointNav: 800px;
 
 @mixin stackPrimaryHeadline(){
   font-family: $primaryHeadlineStack;
+  font-style: normal;
   font-weight: 400;
 }
 
 @mixin stackHeadline(){
   font-family: $headlineStack;
+  font-style: normal;
   font-weight: 400;
 }
 
 @mixin stackBody(){
   font-family: $fontStack;
+  font-style: normal;
   font-weight: 400;
 }
 
 @mixin stackBodyBold(){
-  font-family: $fontStack;
+  font-family: "franklin-gothic-urw-n7", Times;
+  font-style: normal;
+  font-weight: 700;
+  font-family: "franklin-gothic-urw-n7","franklin-gothic-urw",sans-serif;
+  font-style: normal;
   font-weight: 700;
 }
 
 @mixin stackQuote(){
   font-family: $fontStack;
+  font-style: normal;
   font-weight: 300;
 }
