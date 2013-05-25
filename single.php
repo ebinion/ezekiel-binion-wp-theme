@@ -18,6 +18,9 @@
           <h1 class="post_title"><?php the_title(); ?></h1>
         </header>
         <div class="content">
+          <?php if( $post->post_excerpt != "" ): ?>
+            <p class="intro"><?php echo $post->post_excerpt; ?></p>
+          <?php endif; ?>
           <?php the_content(); ?>
         </div>
         <?php // comments_template(); ?>

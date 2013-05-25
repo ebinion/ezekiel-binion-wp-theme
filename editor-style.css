@@ -74,6 +74,14 @@ body {
 .positioned {
   position: relative; }
 
+/* line 13, sass/base/_base.scss */
+.wf-loading {
+  opacity: 0; }
+
+/* line 16, sass/base/_base.scss */
+.wf-active, .wf-inactive {
+  opacity: 1; }
+
 /* line 1, sass/base/_buttons.scss */
 .button, button, input[type="submit"], input[type="button"] {
   color: #333;
@@ -1199,7 +1207,7 @@ h1, .post_title {
       text-decoration: none; }
 
 /* line 56, sass/base/_typography.scss */
-h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6, .intro {
   color: #3a3a3a;
   font-family: "franklin-gothic-urw-comp", Arial, Helvetica, Verdana, sans-serif;
   font-weight: 400;
@@ -1213,7 +1221,7 @@ h1.right, h2.right, h3.right, h4.right, h5.right, h6.right {
   text-align: right; }
 
 /* line 72, sass/base/_typography.scss */
-h2 {
+h2, .intro {
   font-size: 30px;
   font-size: 3 rem;
   font-weight: 600;

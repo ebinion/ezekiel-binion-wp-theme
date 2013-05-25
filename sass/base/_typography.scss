@@ -53,7 +53,7 @@ h1, .post_title{
   }
 }
 
-h2,h3,h4,h5,h6{ 
+h2,h3,h4,h5,h6, .intro{ 
   color: $headlineColor;
   @include stackHeadline;
   margin: 0 0 30px;
@@ -69,7 +69,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 
-h2{
+h2, .intro{
   @include font-size(30px);
   font-weight: 600;
   line-height: 45px;

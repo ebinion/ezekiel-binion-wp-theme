@@ -13,6 +13,7 @@ Welcome to the WordPress theme for my personal site, <a href="http://ezekielbini
 ### v0.5
 
 - Adding commenting ability
+- Using post excerpts for lead-in content
 
 
 ### v0.4
@@ -26,7 +27,7 @@ Welcome to the WordPress theme for my personal site, <a href="http://ezekielbini
 - Typography moved to it's own Sass file
 - Changing type faces and baseline grid
 - Creating editor style file for WordPress's built-in rich text editor
-- Switched Typekit
+- Switched Typekit to async
 
 ### v0.2
 

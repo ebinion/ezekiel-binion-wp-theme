@@ -10,3 +10,10 @@ body{
 .positioned{
   position: relative;
 }
+.wf-loading{
+  opacity: 0;
+}
+.wf-active, .wf-inactive{
+  opacity: 1;
+  // @include transition(opacity .5s ease-in-out);
+}
