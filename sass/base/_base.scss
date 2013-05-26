@@ -1,6 +1,7 @@
 // Do not include any style in base that should not be imported into the Rich Text Editor
 body{
   background: #fff;
+  min-width: 320px;
 }
 .siteWrapper{
   background: $backgroundColor url(img/background-light.jpg);

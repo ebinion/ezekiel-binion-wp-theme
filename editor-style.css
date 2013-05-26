@@ -57,9 +57,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 2, sass/base/_base.scss */
 body {
-  background: #fff; }
+  background: #fff;
+  min-width: 320px; }
 
-/* line 5, sass/base/_base.scss */
+/* line 6, sass/base/_base.scss */
 .siteWrapper {
   background: #f1f1ee url(img/background-light.jpg); }
   /* line 2, sass/_mixins.scss */
@@ -70,15 +71,15 @@ body {
   .siteWrapper:after {
     clear: both; }
 
-/* line 10, sass/base/_base.scss */
+/* line 11, sass/base/_base.scss */
 .positioned {
   position: relative; }
 
-/* line 13, sass/base/_base.scss */
+/* line 14, sass/base/_base.scss */
 .wf-loading {
   opacity: 0; }
 
-/* line 16, sass/base/_base.scss */
+/* line 17, sass/base/_base.scss */
 .wf-active, .wf-inactive {
   opacity: 1; }
 

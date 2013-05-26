@@ -14,6 +14,7 @@ Welcome to the WordPress theme for my personal site, <a href="http://ezekielbini
 
 - Adding commenting ability
 - Using post excerpts for lead-in content
+- Minor display bug fixes
 
 
 ### v0.4

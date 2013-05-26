@@ -51,23 +51,92 @@
   padding: 0;
 
   // Comments List
-  .comment{
-
+  &.comment{
   }
   
 }
 
-
+.comment{
+  margin: 0;  
+}
+.comment.byuser{
+  margin-bottom: 20px;
+}
 .comment-body{
-  padding-left: 100px;
+  background: #fafafa; 
+  border: 1px solid #ddd;
+  padding: 10px 10px 20px 100px;
   position: relative;
 }
 .comment-author .fn{
   @include stackBodyBold;
 }
+.comment-meta{ 
+  @include font-size(13px);
+  line-height:1;
+  margin-bottom: 1em;
+}
+.comment-awaiting-moderation{
+  background: #ffa;
+  display: inline-block;
+  padding: 5px 20px;
+  margin-bottom: 10px;
+}
+
+.reply{
+  margin-top: -1.5em;
+  padding-right: 10px;
+  position: absolute;
+  right: 10px;
+  text-align: right;
+}
+.comment-reply-link{
+  color: #ccc;
+  @include font-size(13px);
+  display: inline-block;
+  padding: 10px 0;
+
+  &:before{
+    font-family: SSStandard;
+    content: '↩';
+    margin-right: 5px;
+    position: relative;
+    top: 3px;
+  }
+
+  &:hover{
+    color: $linkColor;
+    text-decoration: none;
+  }
+}
 .avatar{
-  border-radius: 10px;
   left: 0;
   position: absolute;
   top: 0;
+}
+
+// Comment Reply
+.comment.list .children{
+  list-style:none;
+  margin: -1px 0 0;
+}
+
+@include breakpoint($breakpointLargeMobile){
+  .avatar{
+    height:50px;
+    width:50px;
+  }
+  .comment-body{
+    padding-left: 10px;
+  }
+  .comment-meta, .comment-author{
+    padding-left: 60px;
+  }
+  .comment-awaiting-moderation{
+    padding: 5px 10px;
+    margin-left: 60px;
+  }
+  .reply{
+    right: 0;
+  }
 }
