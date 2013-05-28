@@ -63,10 +63,7 @@ $breakpointNav: 800px;
 }
 
 @mixin stackBodyBold(){
-  font-family: "franklin-gothic-urw-n7", Times;
-  font-style: normal;
-  font-weight: 700;
-  font-family: "franklin-gothic-urw-n7","franklin-gothic-urw",sans-serif;
+  font-family: "franklin-gothic-urw",sans-serif;
   font-style: normal;
   font-weight: 700;
 }

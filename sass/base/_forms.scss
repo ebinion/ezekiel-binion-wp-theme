@@ -15,7 +15,6 @@ form{
 label{
   color: $inputBorderColor;
   display: block;
-  font-weight: bold;
   margin: 5px 0;
   text-transform: lowercase;
   width: 100%;
@@ -41,5 +40,6 @@ input[type="text"], input[type="tel"], input[type="url"], input[type="search"], 
 
 textarea{
   @include box-sizing(border-box);
+  padding: 10px;
   width:100%;
 }

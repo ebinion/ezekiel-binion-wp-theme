@@ -5,7 +5,7 @@ Theme URI: http://ezekielbinion.com
 Author: Ezekiel Binion
 Author URI: http://ezekielbinion.com
 Description: Ezekiel is awesome so he deserves an awesome WordPress theme.
-Version: 0.4
+Version: 0.5
 License: Licensed exclusively for use by Ezekiel Binion. However, feel free to use the code or design for inspiration.
 Tags: responsive
 */
@@ -95,72 +95,22 @@ body {
 
 /* line 1, sass/base/_buttons.scss */
 .button, button, input[type="submit"], input[type="button"] {
-  color: #333;
-  border: 1px solid #c4c4c4;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
-  border-radius: 50px;
-  display: inline-block;
-  background: #c4c4c4 -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #dddddd), color-stop(100%, #9d9d9d));
-  background: #c4c4c4 -webkit-linear-gradient(top, #dddddd, #9d9d9d);
-  background: #c4c4c4 -moz-linear-gradient(top, #dddddd, #9d9d9d);
-  background: #c4c4c4 -o-linear-gradient(top, #dddddd, #9d9d9d);
-  background: #c4c4c4 linear-gradient(top, #dddddd, #9d9d9d);
-  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 0 5px inset, rgba(0, 0, 0, 0.5) 1px 1px 5px;
-  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 0 5px inset, rgba(0, 0, 0, 0.5) 1px 1px 5px;
-  box-shadow: rgba(0, 0, 0, 0.2) 0 0 5px inset, rgba(0, 0, 0, 0.5) 1px 1px 5px;
-  font-size: 18px;
-  font-size: 1.8 rem;
-  font-family: "franklin-gothic-urw", Arial, Helvetica, Verdana, sans-serif;
-  line-height: 32px;
-  padding: 0 20px; }
-  /* line 13, sass/base/_buttons.scss */
+  background: #333333 -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4d4d4d), color-stop(100%, #333333));
+  background: #333333 -webkit-linear-gradient(top, #4d4d4d, #333333);
+  background: #333333 -moz-linear-gradient(top, #4d4d4d, #333333);
+  background: #333333 -o-linear-gradient(top, #4d4d4d, #333333);
+  background: #333333 linear-gradient(top, #4d4d4d, #333333);
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  font-size: 1.4 rem;
+  height: 44px;
+  padding: 0 20px;
+  -webkit-appearance: none; }
+  /* line 11, sass/base/_buttons.scss */
   .button:hover, .button:focus, button:hover, button:focus, input[type="submit"]:hover, input[type="submit"]:focus, input[type="button"]:hover, input[type="button"]:focus {
-    background: #dddddd -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #b7b7b7), color-stop(100%, #dddddd));
-    background: #dddddd -webkit-linear-gradient(top, #b7b7b7, #dddddd);
-    background: #dddddd -moz-linear-gradient(top, #b7b7b7, #dddddd);
-    background: #dddddd -o-linear-gradient(top, #b7b7b7, #dddddd);
-    background: #dddddd linear-gradient(top, #b7b7b7, #dddddd);
-    color: #000;
-    text-decoration: none; }
-  /* line 19, sass/base/_buttons.scss */
-  .button.primary, button.primary, input[type="submit"].primary, input[type="button"].primary {
-    border-color: #007ab6;
-    color: #f1f1f1;
-    background: #007ab6 -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #007ab6), color-stop(100%, #00476a));
-    background: #007ab6 -webkit-linear-gradient(top, #007ab6, #00476a);
-    background: #007ab6 -moz-linear-gradient(top, #007ab6, #00476a);
-    background: #007ab6 -o-linear-gradient(top, #007ab6, #00476a);
-    background: #007ab6 linear-gradient(top, #007ab6, #00476a); }
-    /* line 24, sass/base/_buttons.scss */
-    .button.primary:hover, .button.primary:focus, button.primary:hover, button.primary:focus, input[type="submit"].primary:hover, input[type="submit"].primary:focus, input[type="button"].primary:hover, input[type="button"].primary:focus {
-      background: #009ce9 -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #005883), color-stop(100%, #007ab6));
-      background: #009ce9 -webkit-linear-gradient(top, #005883, #007ab6);
-      background: #009ce9 -moz-linear-gradient(top, #005883, #007ab6);
-      background: #009ce9 -o-linear-gradient(top, #005883, #007ab6);
-      background: #009ce9 linear-gradient(top, #005883, #007ab6); }
-  /* line 29, sass/base/_buttons.scss */
-  .button.big, button.big, input[type="submit"].big, input[type="button"].big {
-    font-size: 16px;
-    font-size: 1.6 rem;
-    line-height: 42px; }
-  /* line 34, sass/base/_buttons.scss */
-  .button.email, button.email, input[type="submit"].email, input[type="button"].email {
-    color: #005883;
-    margin-top: 15px;
-    padding-right: 50px;
-    position: relative; }
-    /* line 40, sass/base/_buttons.scss */
-    .button.email .ss-mail, button.email .ss-mail, input[type="submit"].email .ss-mail, input[type="button"].email .ss-mail {
-      color: #007ab6;
-      display: inline-block;
-      font-size: 42px;
-      font-size: 4.2 rem;
-      position: absolute;
-      top: 5px;
-      right: 0px; }
+    background: #4d4d4d; }
 
 /* line 1, sass/base/_forms.scss */
 form {
@@ -178,12 +128,11 @@ form {
 label {
   color: #999999;
   display: block;
-  font-weight: bold;
   margin: 5px 0;
   text-transform: lowercase;
   width: 100%; }
 
-/* line 24, sass/base/_forms.scss */
+/* line 23, sass/base/_forms.scss */
 input[type="text"], input[type="tel"], input[type="url"], input[type="search"], input[type="color"], input[type="number"], input[type="range"], input[type="date"], input[type="password"], input[type="email"] {
   background: transparent;
   border: none;
@@ -196,7 +145,7 @@ input[type="text"], input[type="tel"], input[type="url"], input[type="search"], 
   line-height: 1;
   padding: 9px 20px;
   width: 100%; }
-  /* line 34, sass/base/_forms.scss */
+  /* line 33, sass/base/_forms.scss */
   input[type="text"].title, input[type="tel"].title, input[type="url"].title, input[type="search"].title, input[type="color"].title, input[type="number"].title, input[type="range"].title, input[type="date"].title, input[type="password"].title, input[type="email"].title {
     font-family: "franklin-gothic-urw-comp", Arial, Helvetica, Verdana, sans-serif;
     font-size: 26px;
@@ -204,11 +153,12 @@ input[type="text"], input[type="tel"], input[type="url"], input[type="search"], 
     font-weight: 100;
     padding: 3px 0; }
 
-/* line 42, sass/base/_forms.scss */
+/* line 41, sass/base/_forms.scss */
 textarea {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  padding: 10px;
   width: 100%; }
 
 /* line 2, sass/base/_grid.scss */
@@ -487,51 +437,53 @@ textarea {
   /* line 63, sass/base/_header_footer.scss */
   .logo {
     padding: 0;
-    width: 60px; }
+    width: 60px;
+    overflow: hidden;
+    text-indent: 100%; }
 
-  /* line 67, sass/base/_header_footer.scss */
+  /* line 69, sass/base/_header_footer.scss */
   #branding {
     height: auto;
     padding: 40px 0;
     margin-bottom: 20px; }
-    /* line 72, sass/base/_header_footer.scss */
+    /* line 74, sass/base/_header_footer.scss */
     #branding .logo {
       margin: 0 auto;
       position: static; }
 
-  /* line 78, sass/base/_header_footer.scss */
+  /* line 80, sass/base/_header_footer.scss */
   #primaryNav {
     float: none;
     margin-top: 20px;
     text-align: center; }
-    /* line 83, sass/base/_header_footer.scss */
+    /* line 85, sass/base/_header_footer.scss */
     #primaryNav li {
       display: inline-block;
       float: none; } }
-/* line 91, sass/base/_header_footer.scss */
+/* line 93, sass/base/_header_footer.scss */
 .project #branding {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0.5)), color-stop(100%, rgba(0, 0, 0, 0)));
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   background: -moz-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   background: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); }
-  /* line 93, sass/base/_header_footer.scss */
+  /* line 95, sass/base/_header_footer.scss */
   .project #branding #logo a {
     background: url(img/e-logo-white.png) no-repeat 0 0; }
-    /* line 96, sass/base/_header_footer.scss */
+    /* line 98, sass/base/_header_footer.scss */
     .project #branding #logo a img {
       opacity: 0; }
 
-/* line 102, sass/base/_header_footer.scss */
+/* line 104, sass/base/_header_footer.scss */
 #siteFooter {
   background: #fff;
   border-top: 1px solid #e5e5e0;
   margin-top: 0;
   padding: 40px 0 20px 0; }
-  /* line 108, sass/base/_header_footer.scss */
+  /* line 110, sass/base/_header_footer.scss */
   #siteFooter .social {
     float: right; }
-  /* line 111, sass/base/_header_footer.scss */
+  /* line 113, sass/base/_header_footer.scss */
   #siteFooter .copyright {
     font-size: 11px;
     font-size: 1.1 rem;
@@ -539,7 +491,7 @@ textarea {
     font-style: oblique;
     line-height: 13px;
     margin-top: 5px; }
-    /* line 118, sass/base/_header_footer.scss */
+    /* line 120, sass/base/_header_footer.scss */
     #siteFooter .copyright a {
       color: #777; }
 
@@ -1606,10 +1558,7 @@ p {
 
 /* line 29, sass/base/_typography.scss */
 strong, b {
-  font-family: "franklin-gothic-urw-n7", Times;
-  font-style: normal;
-  font-weight: 700;
-  font-family: "franklin-gothic-urw-n7","franklin-gothic-urw",sans-serif;
+  font-family: "franklin-gothic-urw",sans-serif;
   font-style: normal;
   font-weight: 700; }
 
@@ -1693,10 +1642,7 @@ blockquote {
   /* line 99, sass/base/_typography.scss */
   blockquote cite {
     display: block;
-    font-family: "franklin-gothic-urw-n7", Times;
-    font-style: normal;
-    font-weight: 700;
-    font-family: "franklin-gothic-urw-n7","franklin-gothic-urw",sans-serif;
+    font-family: "franklin-gothic-urw",sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 13px;
@@ -1872,10 +1818,7 @@ a.text.button {
 
 /* line 71, sass/sections/_blog.scss */
 .comment-author .fn {
-  font-family: "franklin-gothic-urw-n7", Times;
-  font-style: normal;
-  font-weight: 700;
-  font-family: "franklin-gothic-urw-n7","franklin-gothic-urw",sans-serif;
+  font-family: "franklin-gothic-urw",sans-serif;
   font-style: normal;
   font-weight: 700; }
 
@@ -1885,15 +1828,18 @@ a.text.button {
   font-size: 1.3 rem;
   line-height: 1;
   margin-bottom: 1em; }
+  /* line 79, sass/sections/_blog.scss */
+  .comment-meta a {
+    color: #aaa; }
 
-/* line 79, sass/sections/_blog.scss */
+/* line 83, sass/sections/_blog.scss */
 .comment-awaiting-moderation {
   background: #ffa;
   display: inline-block;
   padding: 5px 20px;
   margin-bottom: 10px; }
 
-/* line 86, sass/sections/_blog.scss */
+/* line 90, sass/sections/_blog.scss */
 .reply {
   margin-top: -1.5em;
   padding-right: 10px;
@@ -1901,55 +1847,58 @@ a.text.button {
   right: 10px;
   text-align: right; }
 
-/* line 93, sass/sections/_blog.scss */
+/* line 97, sass/sections/_blog.scss */
 .comment-reply-link {
   color: #ccc;
   font-size: 13px;
   font-size: 1.3 rem;
   display: inline-block;
   padding: 10px 0; }
-  /* line 99, sass/sections/_blog.scss */
+  /* line 103, sass/sections/_blog.scss */
   .comment-reply-link:before {
     font-family: SSStandard;
     content: '↩';
     margin-right: 5px;
     position: relative;
     top: 3px; }
-  /* line 107, sass/sections/_blog.scss */
+  /* line 111, sass/sections/_blog.scss */
   .comment-reply-link:hover {
     color: #007ab6;
     text-decoration: none; }
 
-/* line 112, sass/sections/_blog.scss */
+/* line 116, sass/sections/_blog.scss */
 .avatar {
   left: 0;
   position: absolute;
   top: 0; }
 
-/* line 119, sass/sections/_blog.scss */
+/* line 123, sass/sections/_blog.scss */
 .comment.list .children {
   list-style: none;
-  margin: -1px 0 0; }
+  margin: 0; }
+  /* line 127, sass/sections/_blog.scss */
+  .comment.list .children .comment-body {
+    border-top: none; }
 
 @media screen and (max-width: 550px) {
-  /* line 125, sass/sections/_blog.scss */
+  /* line 133, sass/sections/_blog.scss */
   .avatar {
     height: 50px;
     width: 50px; }
 
-  /* line 129, sass/sections/_blog.scss */
+  /* line 137, sass/sections/_blog.scss */
   .comment-body {
     padding-left: 10px; }
 
-  /* line 132, sass/sections/_blog.scss */
+  /* line 140, sass/sections/_blog.scss */
   .comment-meta, .comment-author {
     padding-left: 60px; }
 
-  /* line 135, sass/sections/_blog.scss */
+  /* line 143, sass/sections/_blog.scss */
   .comment-awaiting-moderation {
     padding: 5px 10px;
     margin-left: 60px; }
 
-  /* line 139, sass/sections/_blog.scss */
+  /* line 147, sass/sections/_blog.scss */
   .reply {
     right: 0; } }

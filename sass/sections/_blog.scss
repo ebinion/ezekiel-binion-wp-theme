@@ -75,6 +75,10 @@
   @include font-size(13px);
   line-height:1;
   margin-bottom: 1em;
+
+  a{
+    color: #aaa;
+  }
 }
 .comment-awaiting-moderation{
   background: #ffa;
@@ -118,7 +122,11 @@
 // Comment Reply
 .comment.list .children{
   list-style:none;
-  margin: -1px 0 0;
+  margin: 0;
+
+  .comment-body{
+    border-top:none;
+  }
 }
 
 @include breakpoint($breakpointLargeMobile){

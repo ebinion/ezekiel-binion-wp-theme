@@ -1,50 +1,14 @@
 .button, button, input[type="submit"], input[type="button"]{
-  color: #333;
-  border: 1px solid darken($secondaryButtonColor, 10%);
-  @include border-radius(50px);
-  display: inline-block;
-  @include background( darken($secondaryButtonColor, 10%) linear-gradient(top, $secondaryButtonColor, darken($secondaryButtonColor, 25%) ) );
-  @include box-shadow( rgba(0,0,0,.2) 0 0 5px inset, rgba(0,0,0,.5) 1px 1px 5px );
-  @include font-size($baseSize);
-  font-family: $fontStack;
-  line-height: 32px;
+  @include background( #333 linear-gradient(top, lighten(#333, 10%), #333 ) );
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  @include font-size(14px);
+  height: 44px;
   padding: 0 20px;
+  -webkit-appearance: none;
 
   &:hover, &:focus{
-    @include background( darken($secondaryButtonColor, 0%) linear-gradient(top, darken($secondaryButtonColor, 15%), $secondaryButtonColor ) );
-    color: #000;
-    text-decoration: none;
-  }
-
-  &.primary{
-    border-color: $primaryColor;
-    color: $white;
-    @include background( $primaryColor linear-gradient(top, $primaryColor, darken($primaryColor, 15%) ) );
-
-    &:hover, &:focus{
-      @include background( lighten($primaryColor, 10%) linear-gradient(top, darken($primaryColor, 10%), $primaryColor ) );
-    }
-  }
-
-  &.big{
-    @include font-size(16px);
-    line-height: 42px;
-  }
-
-  &.email{
-    color: darken($primaryColor, 10%);
-    margin-top: 15px;
-    padding-right: 50px;
-    position: relative;
-
-    .ss-mail{
-      color: $primaryColor;
-      // color:#777;
-      display: inline-block;
-      @include font-size(42px);
-      position: absolute;
-      top: 5px;
-      right: 0px;
-    }
+    background: lighten(#333, 10%);
   }
 }
