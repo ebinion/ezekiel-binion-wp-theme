@@ -10,6 +10,10 @@ Welcome to the WordPress theme for my personal site, <a href="http://ezekielbini
 
 ## Releases
 
+### v0.6
+
+- Removing Google Analytics call for admin & development users. 
+
 ### v0.5
 
 - Adding commenting ability

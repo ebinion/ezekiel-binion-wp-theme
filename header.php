@@ -20,13 +20,15 @@
 
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 
-  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID, and uncomment below. -->
-  <script>
-    var _gaq=[['_setAccount','UA-23433841-1'],['_trackPageview']];
-    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-    s.parentNode.insertBefore(g,s)}(document,'script'));
-  </script>
+  <?php if(WP_DEBUG == false && current_user_can('manage_options') == false): ?>
+    <!-- Analytics -->
+    <script>
+      var _gaq=[['_setAccount','UA-23433841-1'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+  <?php endif; ?>
   <?php wp_head(); ?>
 </head>
 <body class="">
