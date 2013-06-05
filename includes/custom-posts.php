@@ -17,7 +17,7 @@ if( !function_exists('ecb_create_post_types') )
     'hierarchical' => false,
     'menu_position' => 5,
     'supports' => array('title','editor','excerpt', 'revisions','thumbnail'),
-    'taxonomies' => array('post_tag'),
+    'taxonomies' => array('category', 'post_tag'),
     // 'menu_icon' => get_bloginfo('template_directory'). '/images/newspaper-pencil.png'
     );
     

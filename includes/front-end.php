@@ -46,3 +46,33 @@ function remove_width_attribute( $html ) {
    $html = preg_replace( '/(width|height)="\d*"\s/', "", $html );
    return $html;
 }
+
+
+// Remove the links from tags (for now)
+// Thanks commentor at: http://codex.wordpress.org/Function_Reference/get_the_tags
+function ecb_tags(){
+  $args = array(
+    'smallest'  => 8,
+    'largest'   => 22,
+    'unit'      => 'pt',
+    'number'    => 0,
+    'format'    => 'array', // important
+    'separator' => '\n',
+    'orderby'   => 'name',
+    'order'     => 'ASC',
+    'exclude'   => '',
+    'include'   => '',
+    'link'      => 'view',
+    'taxonomy'  => 'post_tag',
+    'echo'      => false 
+  );
+  
+  $tag_list = wp_tag_cloud( $args );
+  $i = count($tag_list);
+  $sep = ' / '; // enter your own seperator string
+  foreach($tag_list as $tags) {
+  echo strip_tags($tags);
+  if($i == 1) { continue; }; $i--; // don't show last sep after the list
+  echo $sep;
+  }
+}
