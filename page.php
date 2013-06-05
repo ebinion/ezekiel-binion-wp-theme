@@ -8,57 +8,57 @@
 */ 
 ?>
 <?php get_template_part("header"); ?>
-<div class="container">
+<section class="container">
   <div class="clearfix">
     <div class="span12 columns">
       <h2 class="sectionTitle">Case Study</h2>
     </div>
   </div>
-  <div class="row">
-    <div class="span4 columns portfolioLead">
+  <a href="#" class="reverse row linkAsBlock">
+    <div class="span7 columns">
+      <div class="projectImage" style="height: 400px;"></div>
+    </div>
+    <div class="span5 columns">
       <span class="category tags">Expert Analysis / Interation Design</span>
-      <h1>Improving Craigslist</h1>
+      <h1>Improving the Craigslist Car + Truck Listing Experience</h1>
       <p>Here's a brief but awesome description of the project.</p>
     </div>
-    <div class="span6">
-
-    </div>
-  </div>
-</div>
-<div class="container">
+  </a>
+</section>
+<section class="container recentWork">
   <div class="row">
     <h2 class="rowless sectionTitle">Recent Work</h2>
     <ul class="portfolioSample list">
         <li>
-          <a href="#">
+          <a href="#" class="linkAsBlock">
             <div class="projectImage"></div>
             <h3 class="projectTitle">Title of Project for Company Name </h3>
             <p class="category tags">Design in the Browser / Rapid Prototyping / Buckets of Farts</p>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="#" class="linkAsBlock">
             <div class="projectImage"></div>
             <h3 class="projectTitle">Title of Project for Company Name </h3>
             <p class="category tags">Design in the Browser / Rapid Prototyping / Buckets of Farts</p>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="#" class="linkAsBlock">
             <div class="projectImage"></div>
             <h3 class="projectTitle">Title of Project for Company Name </h3>
             <p class="category tags">Design in the Browser / Rapid Prototyping / Buckets of Farts</p>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="#" class="linkAsBlock">
             <div class="projectImage"></div>
             <h3 class="projectTitle">Title of Project for Company Name </h3>
             <p class="category tags">Design in the Browser / Rapid Prototyping / Buckets of Farts</p>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="#" class="linkAsBlock">
             <div class="projectImage"></div>
             <h3 class="projectTitle">Title of Project for Company Name </h3>
             <p class="category tags">Design in the Browser / Rapid Prototyping / Buckets of Farts</p>
@@ -66,6 +66,6 @@
         </li>
       </ul>
   </div>
-</div>
+</section>
 
 <?php get_template_part("footer"); ?>

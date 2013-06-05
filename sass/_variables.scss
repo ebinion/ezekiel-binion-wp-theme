@@ -27,9 +27,9 @@ $spacing: 20px;
 $gridGutter: 20px;
 
 // Breakpoints
-$breakpointSingleColumn: 700px;
+$breakpointSingleColumn: 800px;
 $breakpointLargeMobile: 550px;
-$breakpointNav: 800px;
+$breakpointNav: $breakpointSingleColumn;
 
 // Font Mixins
 @mixin font-size($newSize){

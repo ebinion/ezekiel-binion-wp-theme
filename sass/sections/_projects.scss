@@ -22,16 +22,8 @@
   li{
     @include box-sizing(border-box);
     float: left;
-    padding: 10px;
+    padding: 0 10px 20px;
     width:25%;
-  }
-  a{
-    color: inherit;
-    display: block;
-
-    &:hover, &:focus{
-      text-decoration: none;
-    }
   }
 
   .projectTitle, .category.tags{
@@ -45,7 +37,11 @@
 }
 
 .sectionTitle{
-  margin-bottom: 0;
+  margin-bottom: 5px;
+}
+
+.recentWork{
+  margin-top: 40px;
 }
 
 @include breakpoint(900px){

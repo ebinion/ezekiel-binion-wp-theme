@@ -3,6 +3,7 @@
 
 // Implement self clearing for floats
 .container, .row, .clearfix{ 
+  display: block;
   @include self-clear; 
   width: 100%;
 }
@@ -14,8 +15,12 @@
 }
 
 .columns, .column{
+  display: block;
   float: left;
   padding: 0 $gridGutter/2;
+}
+.reverse .columns, .reverse .column{
+  float: right;
 }
 
 .row{
@@ -40,6 +45,9 @@
 @include breakpoint($breakpointSingleColumn){
   .container{
     padding: 0 $gridGutter/2;
+  }
+  .reverse .columns, .reverse .column, .columns, .column{
+    float: none;
   }
 
   @include grid(12, true);

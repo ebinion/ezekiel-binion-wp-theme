@@ -98,6 +98,24 @@ body {
   margin-left: 10px;
   margin-right: 10px; }
 
+/* line 26, sass/base/_base.scss */
+img {
+  max-width: 100;
+  width: 100%; }
+
+/* line 27, sass/base/_base.scss */
+.noScale {
+  max-width: auto;
+  width: auto; }
+
+/* line 29, sass/base/_base.scss */
+.linkAsBlock {
+  color: inherit;
+  display: block; }
+  /* line 33, sass/base/_base.scss */
+  .linkAsBlock:hover, .linkAsBlock:focus {
+    text-decoration: none; }
+
 /* line 1, sass/base/_buttons.scss */
 .button, button, input[type="submit"], input[type="button"] {
   background: #333333 -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4d4d4d), color-stop(100%, #333333));
@@ -174,6 +192,7 @@ textarea {
 
 /* line 5, sass/base/_grid.scss */
 .container, .row, .clearfix {
+  display: block;
   width: 100%; }
   /* line 2, sass/_mixins.scss */
   .container:before, .container:after, .row:before, .row:after, .clearfix:before, .clearfix:after {
@@ -183,17 +202,22 @@ textarea {
   .container:after, .row:after, .clearfix:after {
     clear: both; }
 
-/* line 11, sass/base/_grid.scss */
+/* line 12, sass/base/_grid.scss */
 .container {
   margin: 0 auto;
   max-width: 1200px; }
 
-/* line 16, sass/base/_grid.scss */
+/* line 17, sass/base/_grid.scss */
 .columns, .column {
+  display: block;
   float: left;
   padding: 0 10px; }
 
-/* line 21, sass/base/_grid.scss */
+/* line 22, sass/base/_grid.scss */
+.reverse .columns, .reverse .column {
+  float: right; }
+
+/* line 26, sass/base/_grid.scss */
 .row {
   margin-bottom: 20px; }
 
@@ -280,13 +304,17 @@ textarea {
   margin-left: 91.66667%; }
 
 @media screen and (max-width: 1220px) {
-  /* line 35, sass/base/_grid.scss */
+  /* line 40, sass/base/_grid.scss */
   .container {
     padding: 0 20px; } }
-@media screen and (max-width: 700px) {
-  /* line 41, sass/base/_grid.scss */
+@media screen and (max-width: 800px) {
+  /* line 46, sass/base/_grid.scss */
   .container {
     padding: 0 10px; }
+
+  /* line 49, sass/base/_grid.scss */
+  .reverse .columns, .reverse .column, .columns, .column {
+    float: none; }
 
   /* line 21, sass/_mixins.scss */
   .span1 {
@@ -1760,7 +1788,7 @@ a.text.button {
   text-align: center;
   text-transform: uppercase; }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   /* line 188, sass/base/_typography.scss */
   body {
     font-size: 16px;
@@ -1959,38 +1987,35 @@ a.text.button {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     float: left;
-    padding: 10px;
+    padding: 0 10px 20px;
     width: 25%; }
-  /* line 28, sass/sections/_projects.scss */
-  .portfolioSample.list a {
-    color: inherit;
-    display: block; }
-    /* line 32, sass/sections/_projects.scss */
-    .portfolioSample.list a:hover, .portfolioSample.list a:focus {
-      text-decoration: none; }
-  /* line 37, sass/sections/_projects.scss */
+  /* line 29, sass/sections/_projects.scss */
   .portfolioSample.list .projectTitle, .portfolioSample.list .category.tags {
     line-height: 1;
     margin: 0; }
 
-/* line 43, sass/sections/_projects.scss */
+/* line 35, sass/sections/_projects.scss */
 .projectTitle {
   font-size: 18px;
   font-size: 1.8 rem; }
 
-/* line 47, sass/sections/_projects.scss */
+/* line 39, sass/sections/_projects.scss */
 .sectionTitle {
-  margin-bottom: 0; }
+  margin-bottom: 5px; }
+
+/* line 43, sass/sections/_projects.scss */
+.recentWork {
+  margin-top: 40px; }
 
 @media screen and (max-width: 900px) {
-  /* line 52, sass/sections/_projects.scss */
+  /* line 48, sass/sections/_projects.scss */
   .portfolioSample.list li {
     width: 33%; } }
 @media screen and (max-width: 650px) {
-  /* line 56, sass/sections/_projects.scss */
+  /* line 52, sass/sections/_projects.scss */
   .portfolioSample.list li {
     width: 50%; } }
 @media screen and (max-width: 480px) {
-  /* line 60, sass/sections/_projects.scss */
+  /* line 56, sass/sections/_projects.scss */
   .portfolioSample.list li {
     width: 100%; } }

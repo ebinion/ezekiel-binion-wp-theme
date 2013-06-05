@@ -22,3 +22,15 @@ body{
   margin-left: 10px;
   margin-right: 10px;
 }
+
+img{ max-width: 100; width: 100%}
+.noScale{ max-width: auto; width: auto;}
+
+.linkAsBlock{
+  color: inherit;
+  display: block;
+
+  &:hover, &:focus{
+    text-decoration: none;
+  }
+}

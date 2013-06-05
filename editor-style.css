@@ -88,6 +88,24 @@ body {
   margin-left: 10px;
   margin-right: 10px; }
 
+/* line 26, sass/base/_base.scss */
+img {
+  max-width: 100;
+  width: 100%; }
+
+/* line 27, sass/base/_base.scss */
+.noScale {
+  max-width: auto;
+  width: auto; }
+
+/* line 29, sass/base/_base.scss */
+.linkAsBlock {
+  color: inherit;
+  display: block; }
+  /* line 33, sass/base/_base.scss */
+  .linkAsBlock:hover, .linkAsBlock:focus {
+    text-decoration: none; }
+
 /* line 1, sass/base/_buttons.scss */
 .button, button, input[type="submit"], input[type="button"] {
   background: #333333 -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4d4d4d), color-stop(100%, #333333));
@@ -1302,7 +1320,7 @@ a.text.button {
   text-align: center;
   text-transform: uppercase; }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   /* line 188, sass/base/_typography.scss */
   body {
     font-size: 16px;
