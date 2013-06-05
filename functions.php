@@ -15,3 +15,6 @@ require_once("includes/menus.php");
 
 // Custom Queries
 require_once("includes/queries.php");
+
+// Custom Post Types, Categories, & Tags
+require_once("includes/custom-posts.php");

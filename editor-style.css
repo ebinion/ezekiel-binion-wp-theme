@@ -90,19 +90,18 @@ body {
 
 /* line 26, sass/base/_base.scss */
 img {
-  max-width: 100;
-  width: 100%; }
+  max-width: 100%; }
 
-/* line 27, sass/base/_base.scss */
+/* line 29, sass/base/_base.scss */
 .noScale {
   max-width: auto;
   width: auto; }
 
-/* line 29, sass/base/_base.scss */
+/* line 31, sass/base/_base.scss */
 .linkAsBlock {
   color: inherit;
   display: block; }
-  /* line 33, sass/base/_base.scss */
+  /* line 35, sass/base/_base.scss */
   .linkAsBlock:hover, .linkAsBlock:focus {
     text-decoration: none; }
 

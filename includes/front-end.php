@@ -30,3 +30,19 @@ function cite_handler($atts, $content = null){
   return '<cite>' . do_shortcode($content) . '</cite>';
 }
 add_shortcode('cite', 'cite_handler');
+
+// Add Support for Thumbnails
+add_theme_support( 'post-thumbnails' );
+
+// Image sizes
+add_image_size( 'portfolio thumbnail', 440, 440, true );
+add_image_size( 'case study thumbnail', 762, 9999, false );
+
+// Responsive images (Thanks CSS-Tricks: http://css-tricks.com/snippets/wordpress/remove-width-and-height-attributes-from-inserted-images/)
+add_filter( 'post_thumbnail_html', 'remove_width_attribute', 10 );
+add_filter( 'image_send_to_editor', 'remove_width_attribute', 10 );
+
+function remove_width_attribute( $html ) {
+   $html = preg_replace( '/(width|height)="\d*"\s/', "", $html );
+   return $html;
+}
