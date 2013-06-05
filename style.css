@@ -460,10 +460,11 @@ textarea {
 
 /* line 52, sass/base/_header_footer.scss */
 #primaryNav {
+  letter-spacing: 1px;
   margin-top: 27px;
-  text-transform: lowercase; }
+  text-transform: uppercase; }
 
-/* line 56, sass/base/_header_footer.scss */
+/* line 57, sass/base/_header_footer.scss */
 #branding {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -472,7 +473,7 @@ textarea {
   margin: 0 0 80px;
   padding: 40px 0; }
 
-/* line 65, sass/base/_header_footer.scss */
+/* line 66, sass/base/_header_footer.scss */
 #primaryNav a {
   color: #555555;
   font-family: "franklin-gothic-urw-comp", Arial, Helvetica, Verdana, sans-serif;
@@ -484,67 +485,67 @@ textarea {
   -moz-transition: color 0.3s;
   -o-transition: color 0.3s;
   transition: color 0.3s; }
-  /* line 73, sass/base/_header_footer.scss */
+  /* line 74, sass/base/_header_footer.scss */
   #primaryNav a:hover, #primaryNav a:focus {
     color: #007ab6;
     text-decoration: none; }
 
-/* line 79, sass/base/_header_footer.scss */
+/* line 80, sass/base/_header_footer.scss */
 .horizontal.nav {
   float: right;
   margin-top: 7px; }
 
 @media screen and (max-width: 800px) {
-  /* line 88, sass/base/_header_footer.scss */
+  /* line 89, sass/base/_header_footer.scss */
   .logo {
     padding: 0;
     width: 60px;
     overflow: hidden;
     text-indent: 100%; }
 
-  /* line 94, sass/base/_header_footer.scss */
+  /* line 95, sass/base/_header_footer.scss */
   #branding {
     height: auto;
     padding: 40px 0;
     margin-bottom: 20px; }
-    /* line 99, sass/base/_header_footer.scss */
+    /* line 100, sass/base/_header_footer.scss */
     #branding .logo {
       margin: 0 auto;
       position: static; }
 
-  /* line 105, sass/base/_header_footer.scss */
+  /* line 106, sass/base/_header_footer.scss */
   #primaryNav {
     float: none;
     margin-top: 20px;
     text-align: center; }
-    /* line 110, sass/base/_header_footer.scss */
+    /* line 111, sass/base/_header_footer.scss */
     #primaryNav li {
       display: inline-block;
       float: none; } }
-/* line 118, sass/base/_header_footer.scss */
+/* line 119, sass/base/_header_footer.scss */
 .project #branding {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0.5)), color-stop(100%, rgba(0, 0, 0, 0)));
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   background: -moz-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   background: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); }
-  /* line 120, sass/base/_header_footer.scss */
+  /* line 121, sass/base/_header_footer.scss */
   .project #branding #logo a {
     background: url(img/e-logo-white.png) no-repeat 0 0; }
-    /* line 123, sass/base/_header_footer.scss */
+    /* line 124, sass/base/_header_footer.scss */
     .project #branding #logo a img {
       opacity: 0; }
 
-/* line 129, sass/base/_header_footer.scss */
+/* line 130, sass/base/_header_footer.scss */
 #siteFooter {
   background: #fff;
   border-top: 1px solid #e5e5e0;
   margin-top: 0;
   padding: 40px 0 20px 0; }
-  /* line 135, sass/base/_header_footer.scss */
+  /* line 136, sass/base/_header_footer.scss */
   #siteFooter .social {
     float: right; }
-  /* line 138, sass/base/_header_footer.scss */
+  /* line 139, sass/base/_header_footer.scss */
   #siteFooter .copyright {
     font-size: 11px;
     font-size: 1.1 rem;
@@ -552,7 +553,7 @@ textarea {
     font-style: oblique;
     line-height: 13px;
     margin-top: 5px; }
-    /* line 145, sass/base/_header_footer.scss */
+    /* line 146, sass/base/_header_footer.scss */
     #siteFooter .copyright a {
       color: #777; }
 

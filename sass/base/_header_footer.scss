@@ -50,8 +50,9 @@
   top: 20px;
 }
 #primaryNav{
+  letter-spacing: 1px;
   margin-top: 27px;
-  text-transform: lowercase;
+  text-transform: uppercase;
 }
 #branding{
   @include box-sizing(border-box);
