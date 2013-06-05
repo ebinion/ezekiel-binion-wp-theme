@@ -25,10 +25,12 @@
           <?php if( $post->post_excerpt != "" ): ?>
             <p class="intro"><?php echo $post->post_excerpt; ?></p>
           <?php endif; ?>
-          <?php the_content(); ?>
+          
         </div>
-        
-      </div>
+     </section>
+
+     <?php the_content(); ?>
+
   </article>
 <?php endwhile; endif; ?>
 

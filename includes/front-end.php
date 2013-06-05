@@ -58,3 +58,38 @@ function ecb_tags(){
   $tag_string = rtrim( $tag_string, " / ");
   echo $tag_string;
 }
+
+
+remove_shortcode('gallery', 'gallery_shortcode');
+add_shortcode('gallery', 'gs_gallery_shortcode_handler');
+function gs_gallery_shortcode_handler( $atts ){
+  $post = get_post();
+  $args = array( 
+    'post_type' => 'attachment', 
+    'order'=> 'ASC',
+    'orderby' => 'post__in',
+    // 'post_parent' => $post->ID,
+    'post_mime_type' => "image",
+    // 'post_status' => 'inherit',
+    'include' => $atts['ids']
+  ); 
+  $images = get_posts($args);;
+
+  $gallery = '';
+
+  foreach($images as $image){
+    $image_info = wp_get_attachment_image_src( $image->ID, 'case study thumbnail');
+
+    $gallery .= '<div class="row content">';
+    $gallery .= '<div class="span8 columns">';
+    $gallery .= '<img src="';
+    $gallery .= $image_info[0];
+    $gallery .= '">';
+    $gallery .= '</div><div class="span4 columns"><p>';
+    $gallery .= $image->post_excerpt;
+    $gallery .= '</p></div>';
+    $gallery .= '</div>';
+  }
+  echo $gallery;
+
+}
