@@ -93,6 +93,11 @@ body {
 .wf-active, .wf-inactive {
   opacity: 1; }
 
+/* line 21, sass/base/_base.scss */
+.rowless {
+  margin-left: 10px;
+  margin-right: 10px; }
+
 /* line 1, sass/base/_buttons.scss */
 .button, button, input[type="submit"], input[type="button"] {
   background: #333333 -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4d4d4d), color-stop(100%, #333333));
@@ -421,7 +426,7 @@ textarea {
 
 /* line 47, sass/base/_header_footer.scss */
 #branding .logo {
-  left: 20px;
+  left: 10px;
   position: absolute;
   top: 20px; }
 
@@ -1930,3 +1935,62 @@ a.text.button {
   /* line 147, sass/sections/_blog.scss */
   .reply {
     right: 0; } }
+/* line 1, sass/sections/_projects.scss */
+.projectImage {
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid #aaa;
+  display: block;
+  min-height: 300px;
+  margin-bottom: 10px;
+  width: 100%; }
+
+/* line 10, sass/sections/_projects.scss */
+.category.tags {
+  color: #999;
+  font-size: 12px;
+  font-size: 1.2 rem; }
+
+/* line 19, sass/sections/_projects.scss */
+.portfolioSample.list {
+  margin: 0; }
+  /* line 22, sass/sections/_projects.scss */
+  .portfolioSample.list li {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    padding: 10px;
+    width: 25%; }
+  /* line 28, sass/sections/_projects.scss */
+  .portfolioSample.list a {
+    color: inherit;
+    display: block; }
+    /* line 32, sass/sections/_projects.scss */
+    .portfolioSample.list a:hover, .portfolioSample.list a:focus {
+      text-decoration: none; }
+  /* line 37, sass/sections/_projects.scss */
+  .portfolioSample.list .projectTitle, .portfolioSample.list .category.tags {
+    line-height: 1;
+    margin: 0; }
+
+/* line 43, sass/sections/_projects.scss */
+.projectTitle {
+  font-size: 18px;
+  font-size: 1.8 rem; }
+
+/* line 47, sass/sections/_projects.scss */
+.sectionTitle {
+  margin-bottom: 0; }
+
+@media screen and (max-width: 900px) {
+  /* line 52, sass/sections/_projects.scss */
+  .portfolioSample.list li {
+    width: 33%; } }
+@media screen and (max-width: 650px) {
+  /* line 56, sass/sections/_projects.scss */
+  .portfolioSample.list li {
+    width: 50%; } }
+@media screen and (max-width: 480px) {
+  /* line 60, sass/sections/_projects.scss */
+  .portfolioSample.list li {
+    width: 100%; } }

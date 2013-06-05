@@ -1,79 +1,61 @@
-#projectOverview{
-  background-color: darken($backgroundColor, 10%);
-  background-size: 100% auto;
-  margin-top: -100px;
-  padding: 140px 0 40px;
+.projectImage{
+  background:rgba(0,0,0,.4);
+  border: 1px solid #aaa;
+  display: block;
+  min-height: 300px;
+  margin-bottom: 10px;
+  width: 100%;
+}
 
-  a{
-    color: $bodyTextColor;
+.category.tags{
+  // background: $primaryColor;
+  color: #999;
+  @include font-size(12px);
+}
+.portfolioLead{
+  // background:rgba(0,0,0,.4);
+}
+
+.portfolioSample.list{
+  margin: 0;
+
+  li{
+    @include box-sizing(border-box);
+    float: left;
+    padding: 10px;
+    width:25%;
   }
+  a{
+    color: inherit;
+    display: block;
 
-  &.darkBG{
-    color: #fff;
-    @include text-shadow(rgba(0,0,0,.7) 1px 1px 3px);
-
-    h1,h2,h3,h4,h5,h6,p,a{
-      color: #fff;
+    &:hover, &:focus{
+      text-decoration: none;
     }
   }
 
-  .screenshot{
-    text-align: right;
-  }
-
-  h1{
+  .projectTitle, .category.tags{
+    line-height: 1;
     margin: 0;
   }
-  .collaborators, .roles{
-    
-    margin: 3px 0 0;
-  }
-  .roles{
-    strong{
-      @include font-size(13px);
-    }
-    
-    @include font-size(11px);
-    font-style: oblique;
-    line-height: 16px;
-    margin-top: 20px;
-  }
-  .collaborators{
-    line-height: 18px;
-  }
 }
 
-#processFlow{
-  margin-top: 40px;
-
-  .row{
-    border-bottom: 1px solid darken($backgroundColor, 10%);
-    padding: 20px 0 40px 0;
-
-    &:last-child{
-      border: none;
-    }
-  }
-
-  h3.sectionLabel.centered{
-    margin-top: 0;
-  }
+.projectTitle{
+  @include font-size(18px);
 }
 
-// Kanguru specfic overrides
-.kanguru.project{
-  #projectOverview{
-    background: #042b49 url(projects/kanguru/rainy-bg.jpg) no-repeat center 30%;
-    // background: #F15A24;
-    background-size: 100% auto;
-
-    img{
-      height: 400px;
-      margin-top: -50px;
-    }
-  }
+.sectionTitle{
+  margin-bottom: 0;
 }
 
-.projectDescription{
-  font-weight: 200;
+@include breakpoint(900px){
+  .portfolioSample.list li{ width: 33%; }
+}
+
+@include breakpoint(650px){
+  .portfolioSample.list li{ width: 50%; }
+}
+
+@include breakpoint(480px){
+  .portfolioSample.list li{ width: 100%; }
 }
