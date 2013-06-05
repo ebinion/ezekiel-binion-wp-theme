@@ -12,7 +12,7 @@
 <?php if(have_posts()): while(have_posts()): the_post(); ?>
   <article class="container">
     <header class="clearfix">
-      <div class="span12 columns">
+      <div class="span10 columns offset1">
         <p class="category tags noMargin center"><?php ecb_tags(); ?></p>
         <h1 class="post_title center"><?php the_title(); ?></h1>
       </div>
