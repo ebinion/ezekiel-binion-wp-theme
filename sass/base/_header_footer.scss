@@ -7,18 +7,40 @@
   font-size: 12px;
   font-weight: 200;
   height: 61px;
-  letter-spacing: 8px;
+  letter-spacing: 10px;
   line-height: 0;
   overflow: hidden;
   padding: 31px 0 0 80px;
   text-transform: uppercase;
-  width: 385px;
+  @include transition(letter-spacing .3s ease-in-out);
+  width: 420px;
   white-space: nowrap;
+
 
   &:hover, &:focus{
     text-decoration: none;
   }
 }
+@include breakpoint(1300px){
+  .logo{ letter-spacing:9px;}
+}
+@include breakpoint(1200px){
+  .logo{ letter-spacing:8px;}
+}
+@include breakpoint(1100px){
+  .logo{ letter-spacing:7px;}
+}
+@include breakpoint(1000px){
+  .logo{ letter-spacing:6px;}
+}
+@include breakpoint(950px){
+  .logo{ letter-spacing:5px;}
+}
+@include breakpoint(900px){
+  .logo{ letter-spacing:4px;}
+}
+
+
 .no-svg .logo{
   background-image: url(img/e-logo.png);
 }
@@ -58,6 +80,9 @@
   float: right;
   margin-top: 7px;
 }
+
+
+
 
 @include breakpoint($breakpointNav){
   .logo{

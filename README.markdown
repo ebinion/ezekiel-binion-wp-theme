@@ -10,9 +10,14 @@ Welcome to the WordPress theme for my personal site, <a href="http://ezekielbini
 
 ## Releases
 
-### v0.6
+### v1.1
 
+- Adding 404 page
+- Adding support for responsive images in posts.
+
+### v1.0 (current)
 - Removing Google Analytics call for admin & development users. 
+- major design updates for portfolio support
 
 ### v0.5
 
