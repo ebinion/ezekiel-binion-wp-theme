@@ -105,6 +105,10 @@ img {
   .linkAsBlock:hover, .linkAsBlock:focus {
     text-decoration: none; }
 
+/* line 40, sass/base/_base.scss */
+.noMargin {
+  margin: 0; }
+
 /* line 1, sass/base/_buttons.scss */
 .button, button, input[type="submit"], input[type="button"] {
   background: #333333 -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4d4d4d), color-stop(100%, #333333));
@@ -1304,11 +1308,10 @@ a.text.button {
 
 /* line 171, sass/base/_typography.scss */
 .post_title {
-  text-align: center;
   margin-top: 0;
   margin-bottom: 60px; }
 
-/* line 177, sass/base/_typography.scss */
+/* line 176, sass/base/_typography.scss */
 .post_time {
   color: #999;
   display: block;
@@ -1320,28 +1323,28 @@ a.text.button {
   text-transform: uppercase; }
 
 @media screen and (max-width: 800px) {
-  /* line 188, sass/base/_typography.scss */
+  /* line 187, sass/base/_typography.scss */
   body {
     font-size: 16px;
     font-size: 1.6 rem; }
 
-  /* line 192, sass/base/_typography.scss */
+  /* line 191, sass/base/_typography.scss */
   h1, .post_title {
     font-size: 40px;
     font-size: 4 rem;
     line-height: 45px; }
 
-  /* line 197, sass/base/_typography.scss */
+  /* line 196, sass/base/_typography.scss */
   .post_title {
     margin-bottom: 45px; }
 
-  /* line 199, sass/base/_typography.scss */
+  /* line 198, sass/base/_typography.scss */
   h2 {
     font-size: 24px;
     font-size: 2.4 rem;
     line-height: 30px; }
 
-  /* line 204, sass/base/_typography.scss */
+  /* line 203, sass/base/_typography.scss */
   blockquote {
     font-size: 18px;
     font-size: 1.8 rem;

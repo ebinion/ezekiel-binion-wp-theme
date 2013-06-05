@@ -15,7 +15,7 @@
       <article class="span8 columns offset2 post_preview">
         <header>
           <time class="post_time" datetime="<?php the_time('c'); ?>"><?php the_time("F j, Y"); ?> at <?php the_time("g:i a"); ?></time>
-          <h1 class="post_title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+          <h1 class="post_title center"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
         </header>
         <div class="content">
           <?php the_excerpt(); ?>

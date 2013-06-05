@@ -115,6 +115,10 @@ img {
   .linkAsBlock:hover, .linkAsBlock:focus {
     text-decoration: none; }
 
+/* line 40, sass/base/_base.scss */
+.noMargin {
+  margin: 0; }
+
 /* line 1, sass/base/_buttons.scss */
 .button, button, input[type="submit"], input[type="button"] {
   background: #333333 -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4d4d4d), color-stop(100%, #333333));
@@ -1773,11 +1777,10 @@ a.text.button {
 
 /* line 171, sass/base/_typography.scss */
 .post_title {
-  text-align: center;
   margin-top: 0;
   margin-bottom: 60px; }
 
-/* line 177, sass/base/_typography.scss */
+/* line 176, sass/base/_typography.scss */
 .post_time {
   color: #999;
   display: block;
@@ -1789,28 +1792,28 @@ a.text.button {
   text-transform: uppercase; }
 
 @media screen and (max-width: 800px) {
-  /* line 188, sass/base/_typography.scss */
+  /* line 187, sass/base/_typography.scss */
   body {
     font-size: 16px;
     font-size: 1.6 rem; }
 
-  /* line 192, sass/base/_typography.scss */
+  /* line 191, sass/base/_typography.scss */
   h1, .post_title {
     font-size: 40px;
     font-size: 4 rem;
     line-height: 45px; }
 
-  /* line 197, sass/base/_typography.scss */
+  /* line 196, sass/base/_typography.scss */
   .post_title {
     margin-bottom: 45px; }
 
-  /* line 199, sass/base/_typography.scss */
+  /* line 198, sass/base/_typography.scss */
   h2 {
     font-size: 24px;
     font-size: 2.4 rem;
     line-height: 30px; }
 
-  /* line 204, sass/base/_typography.scss */
+  /* line 203, sass/base/_typography.scss */
   blockquote {
     font-size: 18px;
     font-size: 1.8 rem;
@@ -1974,12 +1977,13 @@ a.text.button {
 .category.tags {
   color: #999;
   font-size: 12px;
-  font-size: 1.2 rem; }
+  font-size: 1.2 rem;
+  text-transform: uppercase; }
 
-/* line 17, sass/sections/_projects.scss */
+/* line 18, sass/sections/_projects.scss */
 .portfolioSample.list {
   margin: 0; }
-  /* line 20, sass/sections/_projects.scss */
+  /* line 21, sass/sections/_projects.scss */
   .portfolioSample.list li {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -1987,33 +1991,33 @@ a.text.button {
     float: left;
     padding: 0 10px 20px;
     width: 25%; }
-  /* line 27, sass/sections/_projects.scss */
+  /* line 28, sass/sections/_projects.scss */
   .portfolioSample.list .projectTitle, .portfolioSample.list .category.tags {
     line-height: 1;
     margin: 0; }
 
-/* line 33, sass/sections/_projects.scss */
+/* line 34, sass/sections/_projects.scss */
 .projectTitle {
-  font-size: 18px;
-  font-size: 1.8 rem; }
+  font-size: 20px;
+  font-size: 2 rem; }
 
-/* line 37, sass/sections/_projects.scss */
+/* line 38, sass/sections/_projects.scss */
 .sectionTitle {
   margin-bottom: 5px; }
 
-/* line 41, sass/sections/_projects.scss */
+/* line 42, sass/sections/_projects.scss */
 .recentWork {
   margin-top: 40px; }
 
 @media screen and (max-width: 900px) {
-  /* line 46, sass/sections/_projects.scss */
+  /* line 47, sass/sections/_projects.scss */
   .portfolioSample.list li {
     width: 33%; } }
 @media screen and (max-width: 650px) {
-  /* line 50, sass/sections/_projects.scss */
+  /* line 51, sass/sections/_projects.scss */
   .portfolioSample.list li {
     width: 50%; } }
 @media screen and (max-width: 480px) {
-  /* line 54, sass/sections/_projects.scss */
+  /* line 55, sass/sections/_projects.scss */
   .portfolioSample.list li {
     width: 100%; } }

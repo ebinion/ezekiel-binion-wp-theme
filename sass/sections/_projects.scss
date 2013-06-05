@@ -9,6 +9,7 @@
   // background: $primaryColor;
   color: #999;
   @include font-size(12px);
+  text-transform: uppercase;
 }
 .portfolioLead{
   // background:rgba(0,0,0,.4);
@@ -31,7 +32,7 @@
 }
 
 .projectTitle{
-  @include font-size(18px);
+  @include font-size(20px);
 }
 
 .sectionTitle{
