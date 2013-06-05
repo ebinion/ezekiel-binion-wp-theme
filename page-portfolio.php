@@ -25,7 +25,6 @@
       </div>
       <div class="span5 columns">
         <span class="category tags"><?php ecb_tags(); ?></span>
-        <!-- <h1>Improving the Craigslist Car + Truck Listing Experience</h1> -->
         <h1><?php the_title(); ?></h1>
         <p><?php the_except(); ?></p>
       </div>
