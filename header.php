@@ -36,7 +36,7 @@
     <header id="branding">
       <div class="container">
         <div class="clearfix positioned">
-            <a id="logo" class="logo" href="<?php bloginfo('wpurl'); ?>">
+            <a id="logo" class="logo" href="<?php echo site_url(); ?>">
               <?php bloginfo('name'); ?>
             </a>
           <?php header_menu(); ?>
