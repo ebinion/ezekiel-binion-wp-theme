@@ -5,9 +5,9 @@
  * @package WordPress
  * @subpackage Ezekiel
  * @since Ezekiel 1.0
-*/ 
+*/
 ?>
-<?php get_template_part("header"); ?>
+<?php get_header(); ?>
 <section class="container">
   <div class="clearfix">
     <div class="span12 columns">
@@ -68,4 +68,4 @@
   </div>
 </section>
 
-<?php get_template_part("footer"); ?>
+<?php get_footer(); ?>

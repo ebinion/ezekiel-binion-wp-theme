@@ -13,7 +13,7 @@
       <div class="container">
         <div class="clearfix">
           <div class="span8 columns">
-            <p class="copyright">©<?php echo date("Y"); ?> Ezekiel C. Binion<br>
+            <p class="copyright">&copy;<?php echo date("Y"); ?> Ezekiel C. Binion<br>
             Chicago-based UX/UI designer, front end developer, &amp; Ruby on Rails engineer</p>
           </div>
           <?php social_footer_menu(); ?>
