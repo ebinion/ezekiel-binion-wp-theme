@@ -52,11 +52,14 @@ function remove_width_attribute( $html ) {
 function ecb_tags(){
   $tags = get_the_tags();
   $tag_string = "";
-  foreach( $tags as $tag){
-    $tag_string .= $tag->name . ' / ';
+
+  if( $tags != ""){
+    foreach( $tags as $tag){
+      $tag_string .= $tag->name . ' / ';
+    }
+    $tag_string = rtrim( $tag_string, " / ");
+    echo $tag_string;
   }
-  $tag_string = rtrim( $tag_string, " / ");
-  echo $tag_string;
 }
 
 
