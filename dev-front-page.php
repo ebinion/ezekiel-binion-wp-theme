@@ -1,4 +1,4 @@
-<?php get_template_part("header"); ?>
+<?php get_header(); ?>
 
 <div class="container">
   <div class="row">
@@ -6,4 +6,4 @@
   </div>
 </div>
 
-<?php get_template_part("footer"); ?>
+<?php get_footer(); ?>

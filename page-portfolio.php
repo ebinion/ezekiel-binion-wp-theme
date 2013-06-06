@@ -5,11 +5,11 @@
  * @package WordPress
  * @subpackage Ezekiel
  * @since Ezekiel 1.0
-*/ 
+*/
 ?>
-<?php get_template_part("header"); ?>
+<?php get_header(); ?>
 
-<?php 
+<?php
   $case_query = new WP_Query(array('post_type' => 'portfolio', 'category_name' => 'Case Study'));
   if($case_query->have_posts()): while($case_query->have_posts()): $case_query->the_post();
 ?>
@@ -32,7 +32,7 @@
   </section>
 <?php endwhile; endif; ?>
 
-<?php 
+<?php
   $port_query = new WP_Query(array('post_type' => 'portfolio', 'category_name' => 'Recent Work'));
   if($port_query->have_posts()):
 ?>
@@ -57,4 +57,4 @@
 <?php endif; ?>
 
 
-<?php get_template_part("footer"); ?>
+<?php get_footer(); ?>

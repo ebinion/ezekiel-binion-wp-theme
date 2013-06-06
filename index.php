@@ -5,9 +5,9 @@
  * @package WordPress
  * @subpackage Ezekiel
  * @since Ezekiel 0.1
-*/ 
+*/
 ?>
-<?php get_template_part("header"); ?>
+<?php get_header(); ?>
 
 <div class="container">
   <?php if(have_posts()): while(have_posts()): the_post(); ?>
@@ -33,4 +33,4 @@
   </nav>
 </div>
 
-<?php get_template_part("footer"); ?>
+<?php get_footer(); ?>
