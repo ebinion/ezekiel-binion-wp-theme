@@ -10,7 +10,7 @@
 <?php get_header(); ?>
 
 <?php 
-  $case_query = new WP_Query(array('post_type' => 'portfolio', 'category_name' => 'Case Study', 'posts_per_page' => 1));
+  $case_query = new WP_Query(array('post_type' => 'portfolio', 'category_name' => 'Case Studies', 'posts_per_page' => 1));
   if($case_query->have_posts()): while($case_query->have_posts()): $case_query->the_post();
 ?>
   <section class="container">
@@ -19,14 +19,14 @@
         <h2 class="sectionTitle">Case Study</h2>
       </div>
     </div>
-    <a href="#" class="reverse row linkAsBlock">
+    <a href="<?php the_permalink(); ?>" class="reverse row linkAsBlock">
       <div class="span7 columns">
         <?php echo the_post_thumbnail('case study thumbnail', array('class' => "projectImage")); ?>
       </div>
       <div class="span5 columns">
         <span class="category tags"><?php ecb_tags(); ?></span>
         <h1><?php the_title(); ?></h1>
-        <p><?php the_except(); ?></p>
+        <p><?php the_excerpt(); ?></p>
       </div>
     </a>
   </section>
