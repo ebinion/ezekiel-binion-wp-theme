@@ -5,9 +5,9 @@
  * @package WordPress
  * @subpackage Ezekiel
  * @since Ezekiel 0.1
-*/ 
+*/
 ?>
-<?php get_template_part("header"); ?>
+<?php get_header(); ?>
 
 <?php if(have_posts()): while(have_posts()): the_post(); ?>
   <article class="container">
@@ -25,7 +25,7 @@
           <?php if( $post->post_excerpt != "" ): ?>
             <p class="intro"><?php echo $post->post_excerpt; ?></p>
           <?php endif; ?>
-          
+
         </div>
      </section>
 
@@ -34,4 +34,4 @@
   </article>
 <?php endwhile; endif; ?>
 
-<?php get_template_part("footer"); ?>
+<?php get_footer(); ?>
