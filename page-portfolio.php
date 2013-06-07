@@ -26,7 +26,6 @@
       <div class="span5 columns">
         <span class="category tags"><?php ecb_tags(); ?></span>
         <h1><?php the_title(); ?></h1>
-        <p><?php the_excerpt(); ?></p>
       </div>
     </a>
   </section>
