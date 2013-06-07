@@ -32,13 +32,8 @@
   </section>
 <?php endwhile; endif; wp_reset_query(); ?>
 
-<<<<<<< HEAD
 <?php 
   $port_query = new WP_Query(array('post_type' => 'portfolio', 'category_name' => 'Recent Work', 'posts_per_page' => -1));
-=======
-<?php
-  $port_query = new WP_Query(array('post_type' => 'portfolio', 'category_name' => 'Recent Work'));
->>>>>>> 8295d81e779239c2f5d7b1795d5ed20b8234f0e3
   if($port_query->have_posts()):
 ?>
   <section class="container recentWork">
