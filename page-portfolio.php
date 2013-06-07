@@ -10,7 +10,7 @@
 <?php get_template_part("header"); ?>
 
 <?php 
-  $case_query = new WP_Query(array('post_type' => 'portfolio', 'category_name' => 'Case Study'));
+  $case_query = new WP_Query(array('post_type' => 'portfolio', 'category_name' => 'Case Study', 'posts_per_page' => 1));
   if($case_query->have_posts()): while($case_query->have_posts()): $case_query->the_post();
 ?>
   <section class="container">
@@ -30,10 +30,10 @@
       </div>
     </a>
   </section>
-<?php endwhile; endif; ?>
+<?php endwhile; endif; wp_reset_query(); ?>
 
 <?php 
-  $port_query = new WP_Query(array('post_type' => 'portfolio', 'category_name' => 'Recent Work'));
+  $port_query = new WP_Query(array('post_type' => 'portfolio', 'category_name' => 'Recent Work', 'posts_per_page' => -1));
   if($port_query->have_posts()):
 ?>
   <section class="container recentWork">

@@ -22,8 +22,11 @@
     @include box-sizing(border-box);
     float: left;
     padding: 0 10px 20px;
-    margin-bottom: 30px;
     width:25%;
+    
+    &:nth-child(4n+5){
+      clear: both;
+    }
   }
 
   .projectTitle, .category.tags{
@@ -45,11 +48,31 @@
 }
 
 @include breakpoint(900px){
-  .portfolioSample.list li{ width: 33%; }
+  .portfolioSample.list li{ 
+    width: 33%; 
+
+    &:nth-child(4n+5){
+      clear: none;
+    }
+
+    &:nth-child(3n+4){
+      clear: both;
+    }
+  }
 }
 
 @include breakpoint(650px){
-  .portfolioSample.list li{ width: 50%; }
+  .portfolioSample.list li{ 
+    width: 50%;
+
+    &:nth-child(3n+4){
+      clear: none;
+    }
+
+    &:nth-child(2n+3){
+      clear: both;
+    }
+  }
 }
 
 @include breakpoint(480px){

@@ -1990,35 +1990,49 @@ a.text.button {
     box-sizing: border-box;
     float: left;
     padding: 0 10px 20px;
-    margin-bottom: 30px;
     width: 25%; }
-  /* line 29, sass/sections/_projects.scss */
+    /* line 27, sass/sections/_projects.scss */
+    .portfolioSample.list li:nth-child(4n+5) {
+      clear: both; }
+  /* line 32, sass/sections/_projects.scss */
   .portfolioSample.list .projectTitle, .portfolioSample.list .category.tags {
     line-height: 1;
     margin: 0; }
 
-/* line 35, sass/sections/_projects.scss */
+/* line 38, sass/sections/_projects.scss */
 .projectTitle {
   font-size: 20px;
   font-size: 2 rem; }
 
-/* line 39, sass/sections/_projects.scss */
+/* line 42, sass/sections/_projects.scss */
 .sectionTitle {
   margin-bottom: 5px; }
 
-/* line 43, sass/sections/_projects.scss */
+/* line 46, sass/sections/_projects.scss */
 .recentWork {
   margin-top: 40px; }
 
 @media screen and (max-width: 900px) {
-  /* line 48, sass/sections/_projects.scss */
+  /* line 51, sass/sections/_projects.scss */
   .portfolioSample.list li {
-    width: 33%; } }
+    width: 33%; }
+    /* line 54, sass/sections/_projects.scss */
+    .portfolioSample.list li:nth-child(4n+5) {
+      clear: none; }
+    /* line 58, sass/sections/_projects.scss */
+    .portfolioSample.list li:nth-child(3n+4) {
+      clear: both; } }
 @media screen and (max-width: 650px) {
-  /* line 52, sass/sections/_projects.scss */
+  /* line 65, sass/sections/_projects.scss */
   .portfolioSample.list li {
-    width: 50%; } }
+    width: 50%; }
+    /* line 68, sass/sections/_projects.scss */
+    .portfolioSample.list li:nth-child(3n+4) {
+      clear: none; }
+    /* line 72, sass/sections/_projects.scss */
+    .portfolioSample.list li:nth-child(2n+3) {
+      clear: both; } }
 @media screen and (max-width: 480px) {
-  /* line 56, sass/sections/_projects.scss */
+  /* line 79, sass/sections/_projects.scss */
   .portfolioSample.list li {
     width: 100%; } }
