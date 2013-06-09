@@ -29,4 +29,3 @@ if( !function_exists('ecb_create_post_types') )
   }
   
 }
-add_action('init', 'ecb_create_post_types');
