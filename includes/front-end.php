@@ -9,7 +9,7 @@
 
 // Load JavaScript
 function ecb_load_scripts(){
-  wp_enqueue_script( 'scripts', get_bloginfo('template_directory') . '/js/scripts-ck.js', false, '1.0');
+  wp_enqueue_script( 'scripts', get_bloginfo('template_directory') . '/js/scripts-ck.js', false, '1.1');
 }
 
 
